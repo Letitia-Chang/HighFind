@@ -33,7 +33,7 @@ const JobItem = ({ index, item, handleSavedStatus }) => {
                 </div>
                 <div className="job-salary d-flex flex-row">
                     <img src={billIconGray} alt="salary icon" />
-                    <p className="mb-0">{item.salary == null ? '薪資面議' : `NT$ ${item.salary[1].toLocaleString()} - ${item.salary[2].toLocaleString()} ( ${item.salary[0]})`}</p>
+                    <p className="mb-0">{item.salary === null ? '薪資面議' : `NT$ ${item.salary[1].toLocaleString()} - ${item.salary[2].toLocaleString()} ( ${item.salary[0]})`}</p>
                 </div>
                 <div className="job-description d-flex flex-row">
                     <img src={blocksIconGray} alt="job content icon" />

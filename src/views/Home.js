@@ -49,7 +49,7 @@ const Home = () => {
         const eventItemWidth = 810;
         const windowWidth = window.innerWidth;
         setActiveEvent(index);
-        if (index == 0) {
+        if (index === 0) {
             eventContainer.current.scrollLeft = 0;
         } else {
             eventContainer.current.scrollLeft = eventItemWidth * (index - 1) + (eventItemWidth - 0.5 * (windowWidth - eventItemWidth));
@@ -80,7 +80,7 @@ const Home = () => {
         }).then((response) => {
             let temp = pJobs;
             temp.forEach((ele, index) => {
-                if (ele.id == id) {
+                if (ele.id === id) {
                     temp[index].isLiked = status;
                 }
             });
@@ -106,7 +106,7 @@ const Home = () => {
         }).then((response) => {
             let temp = nJobs;
             temp.forEach((ele, index) => {
-                if (ele.id == id) {
+                if (ele.id === id) {
                     temp[index].isLiked = status;
                 }
             });
@@ -132,7 +132,7 @@ const Home = () => {
         }).then((response) => {
             let temp = pCompanys;
             temp.forEach((ele, index) => {
-                if (ele.id == id) {
+                if (ele.id === id) {
                     temp[index].isLiked = status;
                 }
             });
@@ -158,7 +158,7 @@ const Home = () => {
         }).then((response) => {
             let temp = nCompanys;
             temp.forEach((ele, index) => {
-                if (ele.id == id) {
+                if (ele.id === id) {
                     temp[index].isLiked = status;
                 }
             });

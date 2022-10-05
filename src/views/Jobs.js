@@ -71,7 +71,7 @@ const Jobs = () => {
     //     }
     // );
 
-    const [popularJob, setPopularJob] = useState(queryParams.get("popularJob") == null ? false : true);
+    const [popularJob, setPopularJob] = useState(queryParams.get("popularJob") === null ? false : true);
     const handlePopularJob = (status) => {
         setPopularJob(status);
     }
@@ -558,13 +558,13 @@ const Jobs = () => {
     const handleAddLabels = (id, name) => {
         // console.log(`label added: id - ${id} & name - ${name}`)
         if (id === 'Salary') {
-            var filteredArray = labelsArray.filter(e => e.name == name);
+            var filteredArray = labelsArray.filter(e => e.name === name);
         } else {
-            var filteredArray = labelsArray.filter(e => e.id == id);
+            var filteredArray = labelsArray.filter(e => e.id === id);
         }
 
         console.log(filteredArray)
-        if (filteredArray.length == 0) {
+        if (filteredArray.length === 0) {
             var tempArray = labelsArray;  // Check how to write this better
             tempArray.push({ id: id, name: name })
             setLabelsArray(tempArray);
@@ -573,7 +573,7 @@ const Jobs = () => {
     }
     // 移除 Filter Label Array
     const handleRemoveLabels = (id, name) => {
-        if (id == 'Salary') {
+        if (id === 'Salary') {
             var filteredArray = labelsArray.filter(e => e.name !== name);
         } else {
             var filteredArray = labelsArray.filter(e => e.id !== id);

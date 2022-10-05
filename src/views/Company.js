@@ -275,7 +275,7 @@ const Company = () => {
                                     </div>
                                     <div className="job-info d-flex flex-row">
                                         <img src={billIcon} alt="bill icon" />
-                                        <span>{item.salary == null ? '薪資面議' : `NT$ ${item.salary[1].toLocaleString()} - ${item.salary[2].toLocaleString()} ( ${item.salary[0]})`}</span>
+                                        <span>{item.salary === null ? '薪資面議' : `NT$ ${item.salary[1].toLocaleString()} - ${item.salary[2].toLocaleString()} ( ${item.salary[0]})`}</span>
                                     </div>
                                     <div className="job-info d-flex flex-row">
                                         <img src={blocksIcon} alt="industry icon" />
