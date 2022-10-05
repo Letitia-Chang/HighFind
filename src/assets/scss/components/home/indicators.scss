@@ -1,0 +1,21 @@
+@import "../../global.scss";
+
+.event-indicators {
+    margin-top: 16px;
+    justify-content: center;
+
+    .event-indicator {
+      cursor: pointer;
+      background-color: #9fdedc;
+      border-radius: 50%;
+      @include size(8px, 8px);
+      margin: 0px 3px;
+
+      &.active {
+        background-color: $primary-color-90;
+        border-radius: 100px;
+        @include size(40px, 8px);
+        margin: 0px 3px;
+      }
+    }
+  }

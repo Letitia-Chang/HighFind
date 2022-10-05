@@ -1,0 +1,358 @@
+@import "../scss/global.scss";
+
+/* Top */
+.top-block {
+  background: linear-gradient(180deg, $primary-color-90 55%, $gray-400 45%);
+  @include size(100%, 360px);
+  padding: 86px 360px 0px 360px;
+
+  //  Search Keyword
+  .keyword {
+    position: relative;
+    margin-top: 28px;
+
+    input {
+      @include size(100%, 56px);
+      border-radius: 10px;
+      padding: 15px 58px;
+      border: 1px solid $gray-400;
+      @include text(black, 16px, 400);
+    }
+
+    input::placeholder {
+      @include text($gray-600, 16px, 400);
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 20px;
+      top: 14px;
+      border: none;
+      background-color: transparent;
+
+      img {
+        @include size(24px, 24px);
+      }
+    }
+
+    .close-icon {
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      border: none;
+      background-color: transparent;
+
+      img {
+        @include size(24px, 24px);
+      }
+    }
+  }
+}
+
+.filter-company-type,
+.filter-company-location,
+.filter-company-label,
+.filter-company-employee {
+  position: relative;
+  width: 20%;
+
+  button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    // width: 238px;
+    width: 100%;
+    padding: 12.5px 20px;
+
+    .filter-icon {
+      @include size(24px, 24px);
+    }
+
+    .filter-name {
+      @include text($gray-900, 16px, 400);
+      margin-left: 10px;
+    }
+
+    .arrow-down {
+      @include size(24px, 24px);
+    }
+  }
+
+  // 下拉選單
+  .dropdown-area {
+    @include size(fit-content, fit-content);
+    @include shadow(0px, 3px, 10px, 0px, rgba(0, 0, 0, 0.2));
+    position: absolute;
+    z-index: 3;
+    top: 65px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px;
+
+    .white-polygon {
+      @include size(28px, 24px);
+      position: absolute;
+      top: -15px;
+      left: 85px;
+    }
+
+    .dropdown-column {
+      .category-title {
+        @include text(#48bfbb, 16px, 600);
+      }
+
+      .category-item {
+        @include text($gray-900, 14px, 400);
+        @include size(100%, 30px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+
+        &:hover {
+          background: #d8eef5;
+        }
+      }
+
+      &.column-1,
+      &.column-2,
+      &.column-3,
+      &.column-4 {
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+.filter-company-type {
+  .dropdown-area {
+    .dropdown-column {
+      .category-item {
+        margin-bottom: 8px;
+      }
+
+      &.column-1 {
+        width: 132px;
+      }
+
+      &.column-2 {
+        width: 130px;
+      }
+
+      &.column-3 {
+        width: 126px;
+      }
+    }
+  }
+}
+
+.filter-company-location {
+  .dropdown-area {
+    .dropdown-column {
+      .category-item {
+        margin-top: 8px;
+      }
+
+      &.column-1,
+      &.column-2,
+      &.column-3 {
+        width: 78px;
+      }
+
+      &.column-4 {
+        width: 99px;
+      }
+    }
+  }
+}
+
+.filter-company-label {
+  .dropdown-area {
+    .dropdown-column {
+      .category-item {
+        margin-bottom: 8px;
+      }
+
+      &.column-1 {
+        width: 102px;
+      }
+
+      &.column-2 {
+        width: 106px;
+      }
+
+      &.column-3 {
+        width: 92px;
+      }
+    }
+  }
+}
+
+.filter-company-employee {
+  .dropdown-area {
+    .dropdown-column {
+      .category-item {
+        margin-bottom: 8px;
+      }
+
+      &.column-1 {
+        width: 86px;
+      }
+
+      &.column-2 {
+        width: 102px;
+      }
+    }
+  }
+}
+
+.filter-popular-company {
+  border-radius: 10px;
+  border: none;
+  //   width: 180px;
+  width: 15%;
+  padding: 12.5px 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  .filter-icon {
+    @include size(24px, 24px);
+  }
+
+  &.active {
+    background-color: $primary-color-90;
+
+    .filter-name {
+      @include text(white, 18px, 700);
+      margin-left: 10px;
+    }
+  }
+
+  &.inactive {
+    background-color: white;
+
+    .filter-name {
+      @include text($gray-900, 16px, 400);
+      margin-left: 10px;
+    }
+  }
+}
+
+/* Block */
+.bottom-block {
+  background-color: #fdfdf5;
+  padding: 0px 360px 23px 360px;
+
+  // Image + Items
+  .new-company {
+    padding: 24px 0px 12px 0px;
+
+    .new-company-image {
+      margin: 0px 16px 12px 20px;
+
+      img:first-of-type {
+        @include size(119px, 68px);
+      }
+
+      img:last-of-type {
+        @include size(90px, 114px);
+        margin-left: -59px;
+      }
+    }
+
+    .new-company-items {
+      overflow-x: scroll;
+
+      a {
+        width: fit-content;
+        height: fit-content;
+        text-decoration-line: none;
+      }
+
+      .new-company-item {
+        @extend %background-image;
+        @include size(235px, 162px);
+        align-items: flex-end;
+        border-radius: 10px;
+        margin-right: 12px;
+
+        div {
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(45, 45, 45, 0.6);
+          @include size(100%, 50px);
+
+          span {
+            @include text(white, 18px, 900);
+            @extend %ellipsis;
+            text-align: center;
+            font-style: italic;
+            width: 215px;
+          }
+        }
+      }
+    }
+  }
+
+  // Line
+  .new-company-bottom-line {
+    margin-bottom: 20px;
+    padding: 0px 0px 0px 105px;
+
+    div {
+      @include size(100%, 3px);
+      background-color: #48bfbb;
+    }
+  }
+
+  // Search Result
+  .search-result-container {
+    .search-result-top {
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+
+      .search-cnts {
+        @include text($gray-900, 18px, 400);
+      }
+
+      .search-recruiting {
+        @include text($gray-800, 14px, 700);
+        span {
+          margin-right: 5.5px;
+        }
+      }
+    }
+  }
+}
+
+.companies {
+  .company-item {
+    margin-bottom: 32px;
+  }
+
+  .company-container {
+    .company-items:nth-of-type(3n + 1) {
+      .company-item {
+        margin-right: 16px;
+      }
+    }
+
+    .company-items:nth-of-type(3n + 2) {
+      .company-item {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+
+    .company-items:nth-of-type(3n + 3) {
+      .company-item {
+        margin-left: 16px;
+      }
+    }
+  }
+}

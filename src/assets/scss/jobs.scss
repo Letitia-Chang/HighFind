@@ -1,0 +1,359 @@
+@import "../scss/global.scss";
+
+.top-block {
+  background: linear-gradient(180deg, $primary-color-90 55%, $gray-400 45%);
+  @include size(100%, 360px);
+  padding: 86px 360px 0px 360px;
+
+  //  Search Keyword
+  .keyword {
+    position: relative;
+    margin-top: 28px;
+
+    input {
+      @include size(100%, 56px);
+      border-radius: 10px;
+      padding: 15px 58px;
+      border: 1px solid $gray-400;
+      @include text(black, 16px, 400);
+    }
+
+    input::placeholder {
+      @include text($gray-600, 16px, 400);
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 20px;
+      top: 14px;
+      border: none;
+      background-color: transparent;
+
+      img {
+        @include size(24px, 24px);
+      }
+    }
+
+    .close-icon {
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      border: none;
+      background-color: transparent;
+
+      img {
+        @include size(24px, 24px);
+      }
+    }
+  }
+}
+
+.filter-job-type,
+.filter-job-location,
+.filter-job-label,
+.filter-job-salary {
+  position: relative;
+  width: 20%;
+
+  button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 12.5px 20px;
+
+    .filter-icon {
+      @include size(24px, 24px);
+    }
+
+    .filter-name {
+      @include text($gray-900, 16px, 400);
+      margin-left: 10px;
+    }
+
+    .arrow-down {
+      @include size(24px, 24px);
+    }
+  }
+  .dropdown-area {
+    @include shadow(0px, 3px, 10px, 0px, rgba(0, 0, 0, 0.2));
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    top: 65px;
+    padding: 24px;
+    border-radius: 10px;
+
+    .white-polygon {
+      @include size(28px, 24px);
+      position: absolute;
+      top: -15px;
+      left: 85px;
+    }
+
+    .dropdown-column {
+      .category-title {
+        @include text(#48bfbb, 16px, 600);
+      }
+    }
+  }
+}
+
+.filter-job-type,
+.filter-job-location,
+.filter-job-label {
+  .dropdown-area {
+    @include size(fit-content, fit-content);
+
+    .dropdown-column {
+      .category-item {
+        @include text($gray-900, 14px, 400);
+        @include size(100%, 30px);
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+
+        &:hover {
+          background: #d8eef5;
+        }
+      }
+
+      &.column-1,
+      &.column-2,
+      &.column-3,
+      &.column-4,
+      &.column-5,
+      &.column-6 {
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+.filter-job-type {
+  .dropdown-area {
+    .dropdown-column {
+      &.column-1 {
+        width: 122px;
+      }
+
+      &.column-2,
+      &.column-3 {
+        width: 162px;
+        margin-left: 32px;
+      }
+
+      &.column-4 {
+        width: 105px;
+        margin-left: 32px;
+      }
+
+      &.column-5 {
+        width: 92px;
+        margin-left: 32px;
+      }
+
+      &.column-6 {
+        width: 136px;
+        margin-left: 32px;
+      }
+    }
+  }
+}
+
+.filter-job-location {
+  .dropdown-area {
+    .dropdown-column {
+      &.column-1,
+      &.column-2,
+      &.column-3 {
+        width: 78px;
+      }
+
+      &.column-4 {
+        width: 99px;
+      }
+    }
+  }
+}
+
+.filter-job-label {
+  .dropdown-area {
+    .dropdown-column {
+      &.column-1 {
+        width: 102px;
+      }
+
+      &.column-2 {
+        width: 106px;
+      }
+
+      &.column-3 {
+        width: 92px;
+      }
+    }
+  }
+}
+
+.filter-job-salary {
+  .dropdown-area {
+    width: max-content;
+
+    .row-1 {
+      margin-bottom: 20px;
+
+      .option {
+        justify-content: center;
+        align-items: center;
+        padding: 2.5px 5px;
+        margin-left: 32px;
+
+        img {
+          @include size(16px, 16px);
+        }
+
+        span {
+          @include text($gray-900, 14px, 400);
+        }
+
+        &.active {
+          background-color: #e0f6f5;
+        }
+      }
+    }
+
+    .row-2 {
+      margin-bottom: 8px;
+
+      .category-title {
+        @include text($primary-color-90, 16px, 600);
+      }
+
+      .custom-filter {
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        padding: 8px 16px;
+
+        .salary-type {
+          border-right: 1px solid #ecedec;
+          padding-right: 12px;
+
+          div {
+            background-color: #e0f6f5;
+            padding: 0px 13px;
+            border-radius: 5px;
+            @include text($gray-900, 14px, 400);
+          }
+
+          img {
+            @include size(20px, 20px);
+            margin-left: 12px;
+          }
+        }
+
+        .salary-type-options {
+          position: absolute;
+          z-index: 4;
+          left: 24px;
+          top: 145px;
+          background-color: white;
+          border: 1px solid #48bfbb;
+          border-radius: 5px;
+          padding: 16px;
+
+          .salary-type-option {
+            padding: 0px 31px;
+            @include text($gray-900, 14px, 400);
+            cursor: pointer;
+
+            &.active {
+              background-color: #d8eef5;
+            }
+          }
+
+          .salary-type-option:not(:last-of-type) {
+            margin-bottom: 10px;
+          }
+        }
+
+        .dash {
+          background-color: black;
+          @include size(16px, 1px);
+          margin-left: 12px;
+        }
+
+        input {
+          background-color: #e0f6f5;
+          border-radius: 5px;
+          padding: 0px 19px;
+          border: none;
+          margin-left: 12px;
+          width: 100px;
+          @include text(black, 14px, 400);
+        }
+
+        input::placeholder {
+          @include text($gray-600, 14px, 400);
+        }
+
+        input:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .row-3 {
+      div {
+        cursor: pointer;
+        padding: 1px 12px;
+      }
+
+      div:first-of-type {
+        @include text($primary-color-90, 14px, 400);
+        background-color: transparent;
+      }
+
+      div:last-of-type {
+        background-color: $primary-color-90;
+        border-radius: 5px;
+        @include text(white, 14px, 400);
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.filter-popular-job {
+  border-radius: 10px;
+  border: none;
+  width: 15%;
+  padding: 12.5px 20px;
+
+  .filter-icon {
+    @include size(24px, 24px);
+  }
+
+  &.active {
+    background-color: $primary-color-90;
+
+    .filter-name {
+      @include text(white, 18px, 700);
+      margin-left: 10px;
+    }
+  }
+
+  &.inactive {
+    background-color: white;
+
+    .filter-name {
+      @include text($gray-900, 16px, 400);
+      margin-left: 10px;
+    }
+  }
+}

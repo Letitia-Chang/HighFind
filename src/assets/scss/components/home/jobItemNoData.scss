@@ -1,0 +1,31 @@
+@import "../../global.scss";
+
+.job-item-no-data {
+  justify-content: space-between;
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  @include size(380px, 220px);
+  padding: 16px;
+  @include shadow(1px, 2px, 2px, 0px, rgba(0, 0, 0, 0.15));
+
+  .title {
+    background-color: $no-data;
+    @include size(56px, 56px);
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .no-data-line {
+    height: 21px;
+    border-radius: 5px;
+    background-color: $gray-500;
+    margin-bottom: 2px;
+  }
+
+  .no-data-circle {
+    @include size(28px, 28px);
+    border-radius: 50%;
+    background-color: $gray-500;
+  }
+}

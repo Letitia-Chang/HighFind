@@ -1,0 +1,36 @@
+@import "../global.scss";
+
+.pagination {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  span {
+    @include text($gray-700, 14px, 400);
+    margin: 0px 5px;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0px 5px;
+
+    &.active {
+      @include text($primary-color-90, 14px, 400);
+    }
+
+    &.inactive {
+      @include text($gray-700, 14px, 400);
+    }
+  }
+
+  button {
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+
+    img {
+      @include size(20px, 20px);
+      margin: 0px 5px;
+    }
+  }
+}

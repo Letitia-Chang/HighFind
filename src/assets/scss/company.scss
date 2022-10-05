@@ -1,0 +1,198 @@
+@import "../scss/global.scss";
+
+.company {
+  background-color: #fdfdf5;
+  padding: 40px 360px 60px 360px;
+
+  .company-name {
+    margin-bottom: 32px;
+
+    .company-logo {
+      @extend %background-image;
+      @include image(48px, 48px, 50%);
+    }
+
+    span {
+      @include text(#2d2d2d, 28px, 400);
+      margin-left: 16px;
+    }
+
+    .no-data-1 {
+      @include no-data-round(48px);
+    }
+
+    .no-data-2 {
+      @include no-data(200px, 21px, 0px 0px 0px 16px);
+    }
+  }
+
+  .company-info {
+    padding-left: 36px;
+    width: calc(100% - 795px);
+
+    .company-info-item {
+      margin-bottom: 10px;
+
+      img {
+        @include image(24px, 24px, 0px);
+        margin-right: 10px;
+      }
+
+      p {
+        .export-btn {
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+
+      &.main {
+        p {
+          @include text($gray-900, 16px, 400);
+        }
+      }
+
+      &.sub {
+        p {
+          @include text($primary-color-90, 16px, 700);
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .last-update {
+      color: #909090;
+      font-size: 14px;
+      font-weight: 400;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #cccccc;
+    }
+  }
+
+  .company-env {
+    margin-top: 32px;
+    overflow: scroll;
+
+    div {
+      @extend %background-image;
+      @include image(288px, 157px, 10px);
+      margin-right: 10px;
+    }
+  }
+
+  .company-detail {
+    .detail-info {
+      margin-top: 24px;
+
+      .title {
+        @include text($primary-color-90, 20px, 700);
+        height: 28px;
+        border-left: 4px solid $primary-color-90;
+        padding-left: 10px;
+      }
+
+      p {
+        @include text($gray-900, 16px, 400);
+        white-space: pre-line;
+        margin-top: 16px;
+        line-height: 26px;
+      }
+
+      &.full-width {
+        width: 100%;
+      }
+
+      &.half-width {
+        width: 50%;
+      }
+    }
+  }
+
+  .job-list {
+    background-color: #e0f6f5;
+    margin-top: 60px;
+    border-radius: 10px;
+    padding: 24px 10px;
+
+    .job-list-title {
+      @include text($primary-color-90, 20px, 700);
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    .job-items {
+      margin-top: 24px;
+    }
+    
+    .job-items:nth-of-type(3n + 1) {
+      .job-item {
+        margin-right: auto;
+      }
+    }
+
+    .job-items:nth-of-type(3n + 2) {
+      .job-item {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .job-items:nth-of-type(3n + 3) {
+      .job-item {
+        margin-left: auto;
+      }
+    }
+
+    .job-item {
+      @include shadow(1px, 2px, 2px, 0px, rgba(0, 0, 0, 0.15));
+      @include size(386px, 292px);
+      background-color: white;
+      position: relative;
+      border-radius: 8px;
+      padding: 16px;
+
+      .job-title {
+        @include text($gray-900, 18px, 400);
+        margin-bottom: 8px;
+      }
+
+      .job-description {
+        @include multiline-ellipsis(6);
+        @include text($gray-700, 14px, 400);
+        margin-bottom: 4px;
+        line-height: 22.4px;
+        height: 135px;
+      }
+
+      .job-info {
+        align-items: center;
+        margin-top: 2px;
+
+        img {
+          @include size(18px, 18px);
+          margin-right: 8px;
+        }
+
+        span {
+          @include text($gray-900, 14px, 400);
+        }
+      }
+
+      .job-labels {
+        align-items: center;
+        margin-top: 2px;
+
+        img {
+          @include size(18px, 18px);
+          margin-right: 8px;
+        }
+
+        span {
+          @include text($primary-color-90, 14px, 700);
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

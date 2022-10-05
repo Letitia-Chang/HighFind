@@ -1,0 +1,386 @@
+@import "../../assets/scss/global.scss";
+
+// BLOCKS
+.home {
+  .block-1 {
+    background-color: #fcfaee;
+    height: 440px;
+    padding: 120px 410px;
+  }
+
+  .block-2 {
+    background-color: #fdfdf5;
+    padding: 34px 0px;
+  }
+
+  .block-3,
+  .block-4 {
+    background-color: $gray-100;
+    padding: 40px 0px 0px 0px;
+  }
+}
+
+// 搜尋關鍵字
+.home {
+  .search-title {
+    @include text($gray-800, 28px, 500);
+    margin-bottom: 16px;
+  }
+
+  .search-input {
+    position: relative;
+    width: 442px;
+    margin-bottom: 12px;
+
+    img {
+      @include size(24px, 24px);
+      position: absolute;
+      left: 16px;
+      top: 15px;
+    }
+
+    input {
+      border: 1px solid $primary-color-90;
+      @include text(black, 16px, 400);
+      border-radius: 10px;
+      @include size(442px, 56px);
+      padding: 14px 58px;
+    }
+
+    input::placeholder {
+      @include text($gray-600, 16px, 400);
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+
+  .search-tags {
+    width: 442px;
+
+    .search-tag,
+    .search-tag-no-data {
+      @include text(white, 14px, 400);
+      background-color: #48bfbb;
+      border-radius: 100px;
+      padding: 4px 16px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+
+    .search-tag-no-data {
+      align-items: center;
+      justify-content: center;
+      @include size(60px, 29px);
+    }
+
+    .search-tag:hover {
+      @include shadow(0px, 4px, 4px, 0px, rgba(175, 177, 41, 0.25));
+      background-color: $secondary-color-70;
+      color: $gray-800;
+    }
+  }
+}
+
+.home {
+  // 關於我們
+  .about {
+    justify-content: space-between;
+    padding: 30px 430px;
+
+    .about-image {
+      align-items: center;
+      justify-content: center;
+      @extend %background-image;
+      @include size(220px, 220px);
+      border-radius: 50%;
+      margin-bottom: 32px;
+    }
+
+    .about-title {
+      @include text($primary-color-90, 20px, 700);
+    }
+
+    .about-content {
+      @include text($gray-800, 16px, 400);
+      width: 248px;
+    }
+  }
+
+  // 活動公佈欄
+  .event {
+    padding: 34px 0px;
+
+    .event-title {
+      @include text($primary-color-90, 24px, 700);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .event-description {
+      @include text($gray-800, 16px, 400);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .event-tags {
+      margin: 0px auto 24px auto;
+      overflow-x: scroll;
+      width: calc(100% - 720px);
+
+      .event-tag {
+        @include shadow(4px, 4px, 0px, 0px, rgba(17, 105, 102, 0.1));
+        @include text(#116966, 16px, 700);
+        margin: 0px 8px;
+        background-color: #f6fefd;
+        padding: 12px;
+        border-radius: 10px;
+        border: 2px solid #e0f6f5;
+        width: fit-content;
+
+        &.active {
+          @include shadow(2px, 2px, 0px, 0px, rgba(17, 105, 102, 0.7));
+          @include text(white, 16px, 700);
+          margin: 0px 8px;
+          background-color: #116966;
+          padding: 12px;
+          border-radius: 10px;
+          border: 2px solid #f6fefd;
+          width: fit-content;
+        }
+      }
+    }
+
+    .event-container-mask {
+      overflow-x: hidden;
+
+      .event-container {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        position: relative;
+
+        .event-item {
+          @extend %background-image;
+          @include size(795px, 320px);
+          position: relative;
+          border-radius: 20px;
+          margin: 0px 7.5px;
+
+          .event-type {
+            background-color: #feec80;
+            border-radius: 100px;
+            @include text(#000000, 14px, 400);
+            padding: 8px 20px;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+          }
+
+          &.no-data {
+            background-color: #cccccc;
+
+            .event-type {
+              @include size(82px, 34px);
+            }
+          }
+        }
+
+        .event-item.inactive::before {
+          content: " ";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.5;
+          background-color: white;
+        }
+
+        .event-item.inactive {
+          .event-type::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            border-radius: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            background-color: white;
+          }
+        }
+      }
+
+      .switch-left {
+        position: absolute;
+        z-index: 5;
+        left: 450px;
+        top: 144px;
+        background-color: white;
+        border-radius: 50%;
+        border: none;
+        @include size(48px, 48px);
+        outline: 5px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .switch-right {
+        position: absolute;
+        z-index: 5;
+        right: 450px;
+        top: 144px;
+        background-color: white;
+        border-radius: 50%;
+        border: none;
+        @include size(48px, 48px);
+        outline: 5px solid rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  // 熱門職缺；新進職缺
+  .jobs {
+    .job-title {
+      @include text($primary-color-90, 28px, 700);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 16px;
+
+      img {
+        @include size(28px, 28px);
+        margin-right: 6px;
+      }
+    }
+
+    .job-description {
+      @include text($gray-800, 16px, 400);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .job-tags {
+      width: 1200px;
+      margin: 0px auto 24px auto;
+
+      .job-tag {
+        @include shadow(4px, 4px, 0px, 0px, rgba(17, 105, 102, 0.1));
+        @include text(#116966, 16px, 700);
+        background-color: #f6fefd;
+        padding: 12px;
+        border-radius: 10px;
+        border: 2px solid #e0f6f5;
+        margin: 0px 8px;
+        cursor: pointer;
+
+        &.active {
+          @include shadow(2px, 2px, 0px, 0px, rgba(17, 105, 102, 0.7));
+          @include text(white, 16px, 700);
+          background-color: #116966;
+          border: 2px solid #f6fefd;
+        }
+      }
+    }
+
+    .job-container-mask {
+      position: relative;
+      width: fit-content;
+      margin: 0px auto;
+
+      .switch-left,
+      .switch-right {
+        top: 102px;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        border: none;
+        @include size(48px, 48px);
+        outline: 5px solid rgba(255, 255, 255, 0.3);
+      }
+      .switch-left {
+        left: -40px;
+      }
+
+      .switch-right {
+        right: -40px;
+      }
+    }
+  }
+
+  // 熱門企業；新進企業
+  .companies-home {
+    .company-title {
+      align-items: center;
+      justify-content: center;
+      @include text($primary-color-90, 28px, 700);
+      text-align: center;
+      margin-bottom: 16px;
+
+      img {
+        margin-right: 6px;
+        @include size(28px, 28px);
+      }
+    }
+
+    .company-description {
+      @include text($gray-800, 16px, 400);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .company-container-mask {
+      position: relative;
+      width: fit-content;
+      margin: 0px auto;
+
+      .company-container {
+        width: 1200px;
+        height: 400px; // so the scroller won't block the item
+        margin: 0px auto;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+      }
+
+      .switch-left {
+        position: absolute;
+        left: -40px;
+        top: 170.5px;
+        background-color: $gray-400;
+        border-radius: 50%;
+        border: none;
+        @include size(48px, 48px);
+        outline: 5px solid rgba(255, 255, 255, 0.3);
+
+        img {
+          @include size(32px, 32px);
+        }
+      }
+
+      .switch-right {
+        position: absolute;
+        right: -40px;
+        top: 170.5px;
+        background-color: $gray-400;
+        border-radius: 50%;
+        border: none;
+        @include size(48px, 48px);
+        outline: 5px solid rgba(255, 255, 255, 0.3);
+
+        img {
+          @include size(32px, 32px);
+        }
+      }
+    }
+  }
+}
+
+.home {
+  .company-items {
+    .company-item:not(:nth-of-type(3n)) {
+      margin-right: 16px;
+    }
+  }
+}

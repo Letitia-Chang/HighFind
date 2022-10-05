@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// Loading
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #cccccc;
+  color: #cccccc;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #cccccc;
+  color: #cccccc;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #cccccc;
+  color: #cccccc;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #cccccc;
+  }
+  50%,
+  100% {
+    background-color: white;
+  }
+}
+
+// Color
+$primary-color-97: #b4e4e3;
+$primary-color-95: #68cac6;
+$primary-color-90: #1dafaa;
+$primary-color-80: #1a9c97;
+$primary-color-70: #178884;
+$primary-color-60: #137571;
+$primary-color-50: #10615e;
+$primary-color-40: #0d4e4c;
+$primary-color-30: #0a3a39;
+$primary-color-20: #062726;
+$primary-color-10: #031313;
+
+$secondary-color-97: #fff9d4;
+$secondary-color-95: #fef3aa;
+$secondary-color-90: #feed80;
+$secondary-color-80: #fee655;
+$secondary-color-70: #fde02b;
+$secondary-color-60: #fdda00;
+$secondary-color-50: #d3b600;
+$secondary-color-40: #a99100;
+$secondary-color-30: #7f6d00;
+$secondary-color-20: #544900;
+$secondary-color-10: #2a2400;
+
+$secondary-variant-06: #fde655;
+
+$alert-dark: #f27072;
+$alert-light: #ffe5e5;
+
+$gray-1000: #202020;
+$gray-900: #2d2d2d;
+$gray-800: #4b4b4b;
+$gray-700: #6f6f6f;
+$gray-600: #909090;
+$gray-500: #cccccc;
+$gray-400: #ecedec;
+$gray-300: #f2f2f2;
+$gray-200: #f6f6f6;
+$gray-100: #f9f9f9;
+
+$no-data: #d9d9d9;
+
+// MIXINS
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin shadow-black($x, $y, $b, $s, $o) {
+  -webkit-box-shadow: $x $y $b $s rgba(0, 0, 0, $o);
+  box-shadow: $x $y $b $s rgba(0, 0, 0, $o);
+}
+
+@mixin shadow($x, $y, $b, $s, $color) {
+  -webkit-box-shadow: $x $y $b $s $color;
+  box-shadow: $x $y $b $s $color;
+}
+
+@mixin text($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin image($width, $height, $radius) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+}
+
+@mixin no-data($width, $height, $margin) {
+  height: $height;
+  width: $width;
+  border-radius: 5px;
+  background-color: $no-data;
+  margin: $margin;
+}
+
+@mixin no-data-round($widthHeight) {
+  width: $widthHeight;
+  height: $widthHeight;
+  border-radius: 50%;
+  background-color: $no-data;
+}
+
+@mixin multiline-ellipsis($lines) {
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+// EXTEND
+%background-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+%ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// %apply-button {
+
+// }
+
+// %save-button {
+
+// }

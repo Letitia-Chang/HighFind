@@ -1,0 +1,1120 @@
+{
+  "tags": [
+    {
+      "name": "AI",
+      "id": 1
+    },
+    {
+      "name": "NFT",
+      "id": 2
+    },
+    {
+      "name": "資安",
+      "id": 3
+    },
+    {
+      "name": "前端",
+      "id": 4
+    },
+    {
+      "name": "日本",
+      "id": 5
+    },
+    {
+      "name": "大數據",
+      "id": 6
+    },
+    {
+      "name": "Vue",
+      "id": 7
+    },
+    {
+      "name": "React",
+      "id": 8
+    }
+  ],
+  "jobs": [
+    {
+      "title": "行動小編1",
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": 4,
+      "labels": [],
+      "isActive": false,
+      "isLiked": false,
+      "id": 1
+    },
+    {
+      "title": "行動小編2",
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": 4,
+      "labels": ["數位行銷", "專案企劃", "業務", "專案管理", "行政事務"],
+      "isActive": true,
+      "isLiked": true,
+      "id": 2
+    },
+    {
+      "title": "行動小編3",
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": 4,
+      "labels": ["設計", "UI/UX"],
+      "isActive": true,
+      "isLiked": false,
+      "id": 3
+    },
+    {
+      "title": "UI/UX設計師1",
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": 1,
+      "labels": [],
+      "isActive": true,
+      "isLiked": true,
+      "id": 4
+    },
+    {
+      "title": "UI/UX設計師2",
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": 1,
+      "labels": [],
+      "isActive": false,
+      "isLiked": false,
+      "id": 5
+    },
+    {
+      "title": "UI/UX設計師3",
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": 1,
+      "labels": ["業務"],
+      "isActive": false,
+      "isLiked": false,
+      "id": 6
+    }
+  ],
+  "company": [
+    {
+      "id": 1,
+      "name": "富智捷人工智慧先行者1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "location": {
+        "city": "台北市",
+        "address": "大安區"
+      },
+      "industry": "軟體開發",
+      "employee": "5-9人",
+      "labels": ["數位行銷"],
+      "image": "https://i.postimg.cc/KvV47CBQ/img-company-env-1.jpg",
+      "logo": "https://i.postimg.cc/FKs9Y8Nr/photos.png",
+      "isLiked": true,
+      "isActive": true,
+      "savedCnt": 30
+    },
+    {
+      "id": 2,
+      "name": "MobileDrive 富智捷人工智慧先行者2",
+      "description": "延攬國內外人工智慧車載軟硬體及系統研發的關鍵人才，致力於智慧座艙，先進駕駛輔助系統及車聯服務等解決方案的開發整合",
+      "location": {
+        "city": "台中市",
+        "address": "大安區"
+      },
+      "industry": "實體零售",
+      "employee": "500以上",
+      "labels": ["數位行銷", "業務"],
+      "image": "https://i.postimg.cc/XN1v3tH3/img-company-env-10.jpg",
+      "logo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "isLiked": true,
+      "isActive": false,
+      "savedCnt": 27
+    },
+    {
+      "id": 3,
+      "name": "MobileDrive",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "location": {
+        "city": "南投縣",
+        "address": "大安區"
+      },
+      "industry": "SaaS/商務服務",
+      "employee": "5-9人",
+      "labels": ["Python"],
+      "image": "https://i.postimg.cc/C52MNfBd/img-company-env-2.jpg",
+      "logo": "https://i.postimg.cc/QNBdg25V/stripe.png",
+      "isLiked": false,
+      "isActive": true,
+      "savedCnt": 10
+    },
+    {
+      "id": 4,
+      "name": "MobileDrive 富智捷人工智慧先行者1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "location": {
+        "city": "台北市",
+        "address": "大安區"
+      },
+      "industry": "資訊安全",
+      "employee": "5-9人",
+      "labels": ["數位行銷"],
+      "image": "https://i.postimg.cc/fLwbTsQW/img-company-env-3.jpg",
+      "logo": "https://i.postimg.cc/FKs9Y8Nr/photos.png",
+      "isLiked": false,
+      "isActive": false,
+      "savedCnt": 0
+    },
+    {
+      "id": 5,
+      "name": "MobileDrive 富智捷人工智慧先行者2",
+      "description": "延攬國內外人工智慧車載軟硬體及系統研發的關鍵人才，致力於智慧座艙，先進駕駛輔助系統及車聯服務等解決方案的開發整合",
+      "location": {
+        "city": "台北市",
+        "address": "大安區"
+      },
+      "industry": "資訊安全",
+      "employee": "5-9人",
+      "labels": ["數位行銷", "業務"],
+      "image": "https://i.postimg.cc/BnKbmNC3/img-company-env-4.jpg",
+      "logo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "isLiked": true,
+      "isActive": false,
+      "savedCnt": 8
+    },
+    {
+      "id": 6,
+      "name": "MobileDrive",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "location": {
+        "city": "台北市",
+        "address": "大安區"
+      },
+      "industry": "網路",
+      "employee": "4人以下",
+      "labels": [],
+      "image": "https://i.postimg.cc/MGJTNRsQ/img-company-env-5.jpg",
+      "logo": "https://i.postimg.cc/QNBdg25V/stripe.png",
+      "isLiked": false,
+      "isActive": false,
+      "savedCnt": 2
+    },
+    {
+      "id": 7,
+      "name": "MobileDrive 富智捷人工智慧先行者2",
+      "description": "延攬國內外人工智慧車載軟硬體及系統研發的關鍵人才，致力於智慧座艙，先進駕駛輔助系統及車聯服務等解決方案的開發整合",
+      "location": {
+        "city": "台北市",
+        "address": "大安區"
+      },
+      "industry": "行銷/媒體/廣告",
+      "employee": "5-9人",
+      "labels": ["數位行銷", "業務"],
+      "image": "https://i.postimg.cc/L6q8svwP/img-company-env-6.jpg",
+      "logo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "isLiked": true,
+      "isActive": false,
+      "savedCnt": 20
+    },
+    {
+      "id": 8,
+      "name": "MobileDrive",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "location": {
+        "city": "台北市",
+        "address": "大安區"
+      },
+      "industry": "行銷/媒體/廣告",
+      "employee": "50-99人",
+      "labels": [],
+      "image": "https://i.postimg.cc/wv0j1r9X/img-company-env-7.jpg",
+      "logo": "https://i.postimg.cc/QNBdg25V/stripe.png",
+      "isLiked": true,
+      "isActive": true,
+      "savedCnt": 30
+    }
+  ],
+  "filteredJobs": [
+    {
+      "title": "網頁前端工程師 Web Front-end Engineer",
+      "company": "Food Marco",
+      "image": "../assets/img/img-job-1.png",
+      "address": "台灣 臺北市信義區",
+      "salary": ["monthly", 28000, 33000],
+      "description": "平面設計、網頁設計、網頁前端",
+      "type": "A2",
+      "labels": ["Internet程式設計師", "網頁設計", "韌體設計"],
+      "isActive": false,
+      "isLiked": false,
+      "savedCnt": 30,
+      "id": 1
+    },
+    {
+      "title": "投資法務人員",
+      "company": "誠信投資法律事務所",
+      "image": "job2",
+      "address": "台灣 臺北市大安區",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": "C1",
+      "labels": ["金融投資", "行政人員", "法律事務"],
+      "isActive": true,
+      "isLiked": true,
+      "savedCnt": 10,
+      "id": 2
+    },
+    {
+      "title": "Junior 前端工程師",
+      "company": "GliaCloud",
+      "image": "job3",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": "B4",
+      "labels": ["前端工程師", "UI/UX"],
+      "isActive": true,
+      "isLiked": false,
+      "savedCnt": 0,
+      "id": 3
+    },
+    {
+      "title": "UI/UX設計師1",
+      "company": "樂學舍數位教育有限公司",
+      "image": "job4",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": "H1",
+      "labels": [],
+      "isActive": true,
+      "isLiked": true,
+      "savedCnt": 21,
+      "id": 4
+    },
+    {
+      "title": "UI/UX設計師2",
+      "company": "樂學舍數位教育有限公司",
+      "image": "job5",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": "A2",
+      "labels": [],
+      "isActive": false,
+      "isLiked": false,
+      "savedCnt": 15,
+      "id": 5
+    },
+    {
+      "title": "UI/UX設計師3",
+      "company": "樂學舍數位教育有限公司",
+      "image": "job6",
+      "address": "台中市南區忠明南路",
+      "salary": ["monthly", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "type": "A4",
+      "labels": ["業務"],
+      "isActive": false,
+      "isLiked": false,
+      "savedCnt": 15,
+      "id": 6
+    }
+  ],
+  "jobDetail": [
+    {
+      "id": 1,
+      "jobTitle": "網頁前端工程師Web Front-end Engineer",
+      "company": "Food Marco",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "location": ["台北市", "內湖區堤頂大道二段301號9樓之1"],
+      "industry": "科技產業",
+      "labels": ["數位行銷", "前端工程師"],
+      "image": "",
+      "logo": "",
+      "isLiked": false,
+      "isActive": true,
+      "jobContent": "【我們要找的人】\n1. 真誠、熱情，具有改變現狀的意圖與能量。\n2. 新創血 – 靈活不拘泥，能享受改變問題後的成就感。 \n3. 相信真實資訊的分享讓人受益無窮；相信真實知識的累積與管理，去商業化的平台，可以降低寶貴時間的浪費。 \n4. 目標導向。 \n5. 以解決客戶痛點來思維。 \n6. 重視團隊溝通\n7. 樂於在急速及跨地域文化環境中工作",
+      "workTime": ["早班:9:30-18:30", "中班:14:30-22:30 需輪班"],
+      "leavePolicy": "週休二日\n 可配合假日加班者佳 ( 加班費計算 )",
+      "salary": "面議（經常性薪資達4萬元）",
+      "requirement": "【必備條件】\n 2年或以上的網頁前端開發經驗\n熟悉HTML5, CSS3, Javascript語法及各瀏覽器相容性\n熟悉React, Next.js, Redux, Hooks\n熟悉 Git / APIs / 第三方Library導入\n擁有獨立分析能力及重視個人成員產出與ownership\n對SEO / SEM / Firebase / Branch.io有基礎了解",
+      "extra": "認識GCP / AWS更優\n認識自動化工具(e.g. Jenkins)\n具有英語溝通能力\n良好程式編碼習慣",
+      "benefit": "◆特休加碼：到職即享10日，逐年增加1日，上限30日\n◆週休二日 \n◆提供三節禮金、婚育、喪葬禮金、團體保險(意外保障)\n◆依據法規到職即投保勞保、健保、提撥勞工退休金 \n◆免費供應現煮研磨咖啡\n◆不定期員工聚餐、下午茶\n\n※ 備註：以上所載之薪資福利事項，悉依聘僱合約書及工作規則辦理，爾後如有調整，依調整後公告為准。",
+      "resumeDeliver": "1. High Find投遞履歷\n2. foodmarco1314@gmail.com",
+      "interviewLocation": "台北市內湖區文心路三段231號3樓A室",
+      "notice": "1. 合適者將於7個工作天內主動聯繫，不合適者將不另行通知。\n2. 應徵者請著整齊服裝，攜帶履歷表與作品展示。",
+      "contact": "Emma Lin",
+      "links": [
+        "http://abcdefg.edu.tw23#$utg%024slidj%89-$d4sgaw4$3#565e443!2457",
+        "http://abcdefg.edu.tw23#$utg%024slidj%89-$d4sgaw4$3#565e443!2457"
+      ],
+      "socialLinks": {
+        "fb": "https://google.com",
+        "ig": "https://google.com",
+        "yt": null
+      }
+    }
+  ],
+  "aboutUs": [
+    {
+      "id": "1",
+      "img": "https://i.postimg.cc/3rt3rsrn/img-about-us-person-4.jpg",
+      "title": "Lorem ipsum dolor sit amet",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "2",
+      "img": "https://i.postimg.cc/02rPzVbx/img-about-us-person-3.jpg",
+      "title": "Lorem ipsum dolor sit amet",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "e",
+      "img": "https://i.postimg.cc/2y9YHZ9P/img-about-us-person-1.jpg",
+      "title": "Lorem ipsum dolor sit amet",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "title": "南韓女性主義的多重宇宙",
+      "unit": "學務處課外組",
+      "unitLogo": "https://i.postimg.cc/MZhK99b5/ibm.png",
+      "image": "https://i.postimg.cc/W1z4G2zD/img-event-1-min.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "venue": "any"
+    },
+    {
+      "id": "2",
+      "title": "古今中外家鄉美食分享會",
+      "unit": "學務處課外組",
+      "unitLogo": "https://i.postimg.cc/MZhK99b5/ibm.png",
+      "image": "https://i.postimg.cc/x89fcQB1/img-event-2-min.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "venue": "any"
+    },
+    {
+      "id": "3",
+      "title": "我不是選大學，我選的是人生的大學時光！",
+      "unit": "文學院",
+      "unitLogo": "https://i.postimg.cc/BQYNW1bm/aecom.png",
+      "image": "https://i.postimg.cc/63r6WqjP/img-event-3-min.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "venue": "virtual"
+    },
+    {
+      "id": "4",
+      "title": "走讀文山：木柵的古今巡禮",
+      "unit": "圖書館推廣組",
+      "unitLogo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "image": "https://i.postimg.cc/nLQcW0vp/img-event-4-min.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "venue": "physical"
+    },
+    {
+      "id": "5",
+      "title": "國際志工─尼泊爾遠距服務經驗分享",
+      "unit": "學務處課外組",
+      "unitLogo": "https://i.postimg.cc/MZhK99b5/ibm.png",
+      "image": "https://i.postimg.cc/gJFkb8DR/img-event-5-min.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "venue": "virtual"
+    },
+    {
+      "id": "6",
+      "title": "自主學習工作坊",
+      "unit": "自主學習工作坊",
+      "unitLogo": "https://i.postimg.cc/8CKTM4zh/discord.png",
+      "image": "https://i.postimg.cc/FH6HG2kT/img-event-6-min.jpg",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "venue": "virtual"
+    }
+  ],
+  "pJobs": [
+    {
+      "id": 1,
+      "title": "Senior Human Resources Specialist 資深人力資源專員",
+      "logo": "https://i.postimg.cc/8CKTM4zh/discord.png",
+      "company": "荷叡森有限公司",
+      "companyId": 10,
+      "location": ["台北市", "信義區"],
+      "salary": null,
+      "description": "人事管理 擬定人力資源政策所有與人力相關的行政事務處理，例如：出勤、勞健保與團保、人事歸檔、薪資發放、勞動法令等以達成企業的短中長期策略目標。 人力資源管理 訂定選、訓、用、留帶領公司往更好的方向成長及人力發展計畫。建構人力資源資訊系",
+      "labels": [" 員工20人", "人資"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 2,
+      "title": " HR人力資源專員",
+      "logo": "https://i.postimg.cc/MZhK99b5/ibm.png",
+      "company": "京茂建設股份有限公司",
+      "companyId": 12,
+      "location": ["新竹縣", "竹北市"],
+      "salary": ["月薪", 36000, 38000],
+      "description": ") 4. 公司各項制度建立、推行及維護： (人資相關法規、制度與作業流程建立與優化、組織發展與人資專案規劃與執行。) 5. 人力資源相關文件之更新與管理： (勞保勞退/健保/團體保險加退保、投保級距調整等) 6. 人事相關資料",
+      "labels": ["建築工程業"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 3,
+      "title": "Human Resources Specialist 人資專員",
+      "logo": "https://i.postimg.cc/kgCMmDHt/microsoft.png",
+      "company": "河流遊戲股份有限公司",
+      "companyId": 14,
+      "location": ["台北市", "中山區"],
+      "salary": ["月薪", 28000, 50000],
+      "description": "工作內容 ： 1. 人員招募邀約面試 2. 公司各項制度建立、推行及維護 3. 協助管理和解決員工關係問題，進行有效客觀的調查 4. 人力資源相關文件之更新與管理 5. 協助薪資系統資料整合、各項表單優化與執行 6. 公司聚餐、員工旅遊、會議... 等活動辦理 7. 其他",
+      "labels": [" 員工20人", "距捷運中山國中站280公尺"],
+      "isActive": true,
+      "isLiked": true
+    },
+    {
+      "id": 4,
+      "title": "電商小編 / 社群編輯 / 行銷企劃",
+      "logo": "https://i.postimg.cc/FKs9Y8Nr/photos.png",
+      "company": "朋騰有限公司",
+      "companyId": 16,
+      "location": ["台北市", "信義區"],
+      "salary": ["月薪", 32000, 36000],
+      "description": "【 工作內容 】 主要負責社群平台管理、官網庶務性項目等相關事項服務： 1. 網路平台商品上架及相關維護 2. 經營Facebook粉專、Instagram，定期規劃及討論方向 3. 基礎美編能力：貼文製作需求及製作廣告文宣 4. 擅長網路文字表達與溝通，可獨立撰寫文案",
+      "labels": ["員工15人", "學歷不拘"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 5,
+      "title": "社群經營管理",
+      "logo": "https://i.postimg.cc/kXKMzWTm/samsung.png",
+      "company": "芊翔男仕禮服有限公司",
+      "companyId": 18,
+      "location": ["台北市", "中山區"],
+      "salary": ["月薪", 27000, 40000],
+      "description": "工作內容 1.品牌各社群經營與維護 (FB、IG、LINE) 2.社群素材規劃與產出 3.基本影片拍攝與剪輯 4.品牌各社群廣告投放及成效評估、Google關鍵字廣告 5.產品推廣企劃與執行 6.廣告文案撰寫及優化 7.KOL合作洽談與關係經營",
+      "labels": ["距捷運中山國小站330公尺"],
+      "isActive": true,
+      "isLiked": true
+    },
+    {
+      "id": 6,
+      "title": "社群經營/文案小編",
+      "logo": "https://i.postimg.cc/QNBdg25V/stripe.png",
+      "company": "鏈安領航科技有限公司",
+      "companyId": 20,
+      "location": ["新北市", "新店區"],
+      "salary": ["月薪", 27000, 31000],
+      "description": "Instagram、Line＠、Youtube等社群經營管理） ６．完成主管交辦事項。 ７．情緒管理配合度佳，有良好的溝通能力與技巧。 △日常 1.善於觀察，懂得過生活，具有文字敘述故事能力。 2.喜歡看書，邏輯思維清晰。 3.撰寫過旅行部落格或相關文章者",
+      "labels": ["1年以上", "專科"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 7,
+      "title": "F2E前端工程師",
+      "logo": "https://i.postimg.cc/ht0DPcFZ/vk.png",
+      "company": "樂約科技股份有限公司",
+      "companyId": 22,
+      "location": ["台北市", "信義區"],
+      "salary": ["日薪", 2000, 3000],
+      "description": "工作內容 1．負責前端開發。 2．與PM、設計師、後端工程師配合/溝通 3．依照 UI 需求開發架構、熟悉uniapp開發 4．與後端工程師討論/介接 API 5．解決前端遇到的各種技術、性能問題。 6．編寫高質素、美觀、可維護及沿用",
+      "labels": ["員工20人", "遠端工作", "距捷運台北101/世貿站310公尺"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 8,
+      "title": "前端工程師 2 (Frontend Engineer)",
+      "logo": "https://i.postimg.cc/9z3SyR9P/windows.png",
+      "company": "美商先進系統資訊有限公司 Advanced Control Systems Inc.",
+      "companyId": 24,
+      "location": ["台中市", "西區"],
+      "salary": null,
+      "description": "(QT WEB等) ‧ 智慧電網應用於電力系統 ‧ 系統整合&工程專案執行 ‧ SCADA系統及其設備維護 ‧ 提供安裝及訓練服務 ‧ 處理相關技術文件",
+      "labels": ["員工120人", "電腦軟體服務業"],
+      "isActive": false,
+      "isLiked": false
+    },
+    {
+      "id": 9,
+      "title": " 前端工程師 Frontend Engineer",
+      "logo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "company": "永聯物流開發股份有限公司",
+      "companyId": 26,
+      "location": ["台北市", "內湖區"],
+      "salary": ["年薪", 700000, 1200000],
+      "description": "基於前端技術完成應用開發， 研發團隊規模 8-12 人（持續招聘中）， 需要與其中 4-5 人協力開發與維護產品與項目， 不排斥與海外同事（大陸＼日本＼...）協同工作。 1、精通 HTML＼CSS＼Javascript 前端開發 2",
+      "labels": ["員工35人", "距捷運後山埤站460公尺"],
+      "isActive": true,
+      "isLiked": true
+    },
+    {
+      "id": 10,
+      "title": "Senior Human Resources Specialist 資深人力資源專員",
+      "logo": "https://i.postimg.cc/BQYNW1bm/aecom.png",
+      "company": "荷叡森有限公司",
+      "companyId": 28,
+      "location": ["台北市", "信義區"],
+      "salary": null,
+      "description": "人事管理 擬定人力資源政策所有與人力相關的行政事務處理，例如：出勤、勞健保與團保、人事歸檔、薪資發放、勞動法令等以達成企業的短中長期策略目標。 人力資源管理 訂定選、訓、用、留帶領公司往更好的方向成長及人力發展計畫。建構人力資源資訊系",
+      "labels": [" 員工20人", "人資"],
+      "isActive": false,
+      "isLiked": false
+    },
+    {
+      "id": 11,
+      "title": " HR人力資源專員",
+      "logo": "https://i.postimg.cc/3JJ9bZ8y/amd.png",
+      "company": "京茂建設股份有限公司",
+      "companyId": 30,
+      "location": ["新竹縣", "竹北市"],
+      "salary": ["月薪", 36000, 38000],
+      "description": ") 4. 公司各項制度建立、推行及維護： (人資相關法規、制度與作業流程建立與優化、組織發展與人資專案規劃與執行。) 5. 人力資源相關文件之更新與管理： (勞保勞退/健保/團體保險加退保、投保級距調整等) 6. 人事相關資料",
+      "labels": ["建築工程業"],
+      "isActive": true,
+      "isLiked": true
+    },
+    {
+      "id": 12,
+      "title": "Human Resources Specialist 人資專員",
+      "logo": "https://i.postimg.cc/qBGjLFTV/android.png",
+      "company": "河流遊戲股份有限公司",
+      "companyId": 32,
+      "location": ["台北市", "中山區"],
+      "salary": ["月薪", 28000, 50000],
+      "description": "工作內容 ： 1. 人員招募邀約面試 2. 公司各項制度建立、推行及維護 3. 協助管理和解決員工關係問題，進行有效客觀的調查 4. 人力資源相關文件之更新與管理 5. 協助薪資系統資料整合、各項表單優化與執行 6. 公司聚餐、員工旅遊、會議... 等活動辦理 7. 其他",
+      "labels": [" 員工20人", "距捷運中山國中站280公尺"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 13,
+      "title": "電商小編 / 社群編輯 / 行銷企劃",
+      "logo": "https://i.postimg.cc/rwDjqFtM/beats-pill.png",
+      "company": "朋騰有限公司",
+      "companyId": 34,
+      "location": ["台北市", "信義區"],
+      "salary": ["月薪", 32000, 36000],
+      "description": "【 工作內容 】 主要負責社群平台管理、官網庶務性項目等相關事項服務： 1. 網路平台商品上架及相關維護 2. 經營Facebook粉專、Instagram，定期規劃及討論方向 3. 基礎美編能力：貼文製作需求及製作廣告文宣 4. 擅長網路文字表達與溝通，可獨立撰寫文案",
+      "labels": ["員工15人", "學歷不拘"],
+      "isActive": false,
+      "isLiked": false
+    },
+    {
+      "id": 14,
+      "title": "社群經營管理",
+      "logo": "https://i.postimg.cc/sxKmgMcD/sony.png",
+      "company": "芊翔男仕禮服有限公司",
+      "companyId": 36,
+      "location": ["台北市", "中山區"],
+      "salary": ["月薪", 27000, 40000],
+      "description": "工作內容 1.品牌各社群經營與維護 (FB、IG、LINE) 2.社群素材規劃與產出 3.基本影片拍攝與剪輯 4.品牌各社群廣告投放及成效評估、Google關鍵字廣告 5.產品推廣企劃與執行 6.廣告文案撰寫及優化 7.KOL合作洽談與關係經營",
+      "labels": ["距捷運中山國小站330公尺"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 15,
+      "title": "社群經營/文案小編",
+      "logo": "https://i.postimg.cc/3JJ9bZ8y/amd.png",
+      "company": "鏈安領航科技有限公司",
+      "companyId": 38,
+      "location": ["新北市", "新店區"],
+      "salary": ["月薪", 27000, 31000],
+      "description": "Instagram、Line＠、Youtube等社群經營管理） ６．完成主管交辦事項。 ７．情緒管理配合度佳，有良好的溝通能力與技巧。 △日常 1.善於觀察，懂得過生活，具有文字敘述故事能力。 2.喜歡看書，邏輯思維清晰。 3.撰寫過旅行部落格或相關文章者",
+      "labels": ["1年以上", "專科"],
+      "isActive": true,
+      "isLiked": true
+    },
+    {
+      "id": 16,
+      "title": "F2E前端工程師",
+      "logo": "https://i.postimg.cc/8CKTM4zh/discord.png",
+      "company": "樂約科技股份有限公司",
+      "companyId": 40,
+      "location": ["台北市", "信義區"],
+      "salary": ["日薪", 2000, 3000],
+      "description": "工作內容 1．負責前端開發。 2．與PM、設計師、後端工程師配合/溝通 3．依照 UI 需求開發架構、熟悉uniapp開發 4．與後端工程師討論/介接 API 5．解決前端遇到的各種技術、性能問題。 6．編寫高質素、美觀、可維護及沿用",
+      "labels": ["員工20人", "遠端工作", "距捷運台北101/世貿站310公尺"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 17,
+      "title": "前端工程師 2 (Frontend Engineer)",
+      "logo": "https://i.postimg.cc/3JJ9bZ8y/amd.png",
+      "company": "美商先進系統資訊有限公司 Advanced Control Systems Inc.",
+      "companyId": 42,
+      "location": ["台中市", "西區"],
+      "salary": null,
+      "description": "(QT WEB等) ‧ 智慧電網應用於電力系統 ‧ 系統整合&工程專案執行 ‧ SCADA系統及其設備維護 ‧ 提供安裝及訓練服務 ‧ 處理相關技術文件",
+      "labels": ["員工120人", "電腦軟體服務業"],
+      "isActive": false,
+      "isLiked": false
+    },
+    {
+      "id": 18,
+      "title": " 前端工程師 Frontend Engineer",
+      "logo": "https://i.postimg.cc/sxKmgMcD/sony.png",
+      "company": "永聯物流開發股份有限公司",
+      "companyId": 44,
+      "location": ["台北市", "內湖區"],
+      "salary": ["年薪", 700000, 1200000],
+      "description": "基於前端技術完成應用開發， 研發團隊規模 8-12 人（持續招聘中）， 需要與其中 4-5 人協力開發與維護產品與項目， 不排斥與海外同事（大陸＼日本＼...）協同工作。 1、精通 HTML＼CSS＼Javascript 前端開發 2",
+      "labels": ["員工35人", "距捷運後山埤站460公尺"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 19,
+      "title": "電商小編 / 社群編輯 / 行銷企劃",
+      "logo": "https://i.postimg.cc/sxKmgMcD/sony.png",
+      "company": "朋騰有限公司",
+      "companyId": 46,
+      "location": ["台北市", "信義區"],
+      "salary": ["月薪", 32000, 36000],
+      "description": "【 工作內容 】 主要負責社群平台管理、官網庶務性項目等相關事項服務： 1. 網路平台商品上架及相關維護 2. 經營Facebook粉專、Instagram，定期規劃及討論方向 3. 基礎美編能力：貼文製作需求及製作廣告文宣 4. 擅長網路文字表達與溝通，可獨立撰寫文案",
+      "labels": ["員工15人", "學歷不拘"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 20,
+      "title": "社群經營管理",
+      "logo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "company": "芊翔男仕禮服有限公司",
+      "companyId": 48,
+      "location": ["台北市", "中山區"],
+      "salary": ["月薪", 27000, 40000],
+      "description": "工作內容 1.品牌各社群經營與維護 (FB、IG、LINE) 2.社群素材規劃與產出 3.基本影片拍攝與剪輯 4.品牌各社群廣告投放及成效評估、Google關鍵字廣告 5.產品推廣企劃與執行 6.廣告文案撰寫及優化 7.KOL合作洽談與關係經營",
+      "labels": ["距捷運中山國小站330公尺"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 21,
+      "title": "社群經營/文案小編",
+      "logo": "https://i.postimg.cc/rwDjqFtM/beats-pill.png",
+      "company": "鏈安領航科技有限公司",
+      "companyId": 50,
+      "location": ["新北市", "新店區"],
+      "salary": ["月薪", 27000, 31000],
+      "description": "Instagram、Line＠、Youtube等社群經營管理） ６．完成主管交辦事項。 ７．情緒管理配合度佳，有良好的溝通能力與技巧。 △日常 1.善於觀察，懂得過生活，具有文字敘述故事能力。 2.喜歡看書，邏輯思維清晰。 3.撰寫過旅行部落格或相關文章者",
+      "labels": ["1年以上", "專科"],
+      "isActive": false,
+      "isLiked": false
+    },
+    {
+      "id": 22,
+      "title": "電商小編 / 社群編輯 / 行銷企劃",
+      "logo": "https://i.postimg.cc/rwDjqFtM/beats-pill.png",
+      "company": "朋騰有限公司",
+      "companyId": 52,
+      "location": ["台北市", "信義區"],
+      "salary": ["月薪", 32000, 36000],
+      "description": "【 工作內容 】 主要負責社群平台管理、官網庶務性項目等相關事項服務： 1. 網路平台商品上架及相關維護 2. 經營Facebook粉專、Instagram，定期規劃及討論方向 3. 基礎美編能力：貼文製作需求及製作廣告文宣 4. 擅長網路文字表達與溝通，可獨立撰寫文案",
+      "labels": ["員工15人", "學歷不拘"],
+      "isActive": false,
+      "isLiked": false
+    },
+    {
+      "id": 23,
+      "title": "社群經營管理",
+      "logo": "https://i.postimg.cc/qBGjLFTV/android.png",
+      "company": "芊翔男仕禮服有限公司",
+      "companyId": 54,
+      "location": ["台北市", "中山區"],
+      "salary": ["月薪", 27000, 40000],
+      "description": "工作內容 1.品牌各社群經營與維護 (FB、IG、LINE) 2.社群素材規劃與產出 3.基本影片拍攝與剪輯 4.品牌各社群廣告投放及成效評估、Google關鍵字廣告 5.產品推廣企劃與執行 6.廣告文案撰寫及優化 7.KOL合作洽談與關係經營",
+      "labels": ["距捷運中山國小站330公尺"],
+      "isActive": true,
+      "isLiked": true
+    },
+    {
+      "id": 24,
+      "title": "社群經營/文案小編",
+      "logo": "https://i.postimg.cc/qBGjLFTV/android.png",
+      "company": "鏈安領航科技有限公司",
+      "companyId": 56,
+      "location": ["新北市", "新店區"],
+      "salary": ["月薪", 27000, 31000],
+      "description": "Instagram、Line＠、Youtube等社群經營管理） ６．完成主管交辦事項。 ７．情緒管理配合度佳，有良好的溝通能力與技巧。 △日常 1.善於觀察，懂得過生活，具有文字敘述故事能力。 2.喜歡看書，邏輯思維清晰。 3.撰寫過旅行部落格或相關文章者",
+      "labels": ["1年以上", "專科"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 25,
+      "title": "F2E前端工程師",
+      "logo": "https://i.postimg.cc/BQYNW1bm/aecom.png",
+      "company": "樂約科技股份有限公司",
+      "companyId": 58,
+      "location": ["台北市", "信義區"],
+      "salary": ["日薪", 2000, 3000],
+      "description": "工作內容 1．負責前端開發。 2．與PM、設計師、後端工程師配合/溝通 3．依照 UI 需求開發架構、熟悉uniapp開發 4．與後端工程師討論/介接 API 5．解決前端遇到的各種技術、性能問題。 6．編寫高質素、美觀、可維護及沿用",
+      "labels": ["員工20人", "遠端工作", "距捷運台北101/世貿站310公尺"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 26,
+      "title": "前端工程師 2 (Frontend Engineer)",
+      "logo": "https://i.postimg.cc/BQYNW1bm/aecom.png",
+      "company": "美商先進系統資訊有限公司 Advanced Control Systems Inc.",
+      "companyId": 60,
+      "location": ["台中市", "西區"],
+      "salary": null,
+      "description": "(QT WEB等) ‧ 智慧電網應用於電力系統 ‧ 系統整合&工程專案執行 ‧ SCADA系統及其設備維護 ‧ 提供安裝及訓練服務 ‧ 處理相關技術文件",
+      "labels": ["員工120人", "電腦軟體服務業"],
+      "isActive": false,
+      "isLiked": false
+    },
+    {
+      "id": 27,
+      "title": " 前端工程師 Frontend Engineer",
+      "logo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "company": "永聯物流開發股份有限公司",
+      "companyId": 62,
+      "location": ["台北市", "內湖區"],
+      "salary": ["年薪", 700000, 1200000],
+      "description": "基於前端技術完成應用開發， 研發團隊規模 8-12 人（持續招聘中）， 需要與其中 4-5 人協力開發與維護產品與項目， 不排斥與海外同事（大陸＼日本＼...）協同工作。 1、精通 HTML＼CSS＼Javascript 前端開發 2",
+      "labels": ["員工35人", "距捷運後山埤站460公尺"],
+      "isActive": false,
+      "isLiked": true
+    }
+  ],
+  "nJobs": [
+    {
+      "id": 1,
+      "title": "Senior Human Resources Specialist 資深人力資源專員",
+      "logo": "https://i.postimg.cc/8CKTM4zh/discord.png",
+      "company": "荷叡森有限公司",
+      "companyId": 16,
+      "location": ["台北市", "信義區"],
+      "salary": null,
+      "description": "人事管理 擬定人力資源政策所有與人力相關的行政事務處理，例如：出勤、勞健保與團保、人事歸檔、薪資發放、勞動法令等以達成企業的短中長期策略目標。 人力資源管理 訂定選、訓、用、留帶領公司往更好的方向成長及人力發展計畫。建構人力資源資訊系",
+      "labels": [" 員工20人", "人資"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 2,
+      "title": " HR人力資源專員",
+      "logo": "https://i.postimg.cc/MZhK99b5/ibm.png",
+      "company": "京茂建設股份有限公司",
+      "companyId": 17,
+      "location": ["新竹縣", "竹北市"],
+      "salary": ["月薪", 36000, 38000],
+      "description": ") 4. 公司各項制度建立、推行及維護： (人資相關法規、制度與作業流程建立與優化、組織發展與人資專案規劃與執行。) 5. 人力資源相關文件之更新與管理： (勞保勞退/健保/團體保險加退保、投保級距調整等) 6. 人事相關資料",
+      "labels": ["建築工程業"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 3,
+      "title": "Human Resources Specialist 人資專員",
+      "logo": "https://i.postimg.cc/kgCMmDHt/microsoft.png",
+      "company": "河流遊戲股份有限公司",
+      "companyId": 18,
+      "location": ["台北市", "中山區"],
+      "salary": ["月薪", 28000, 50000],
+      "description": "工作內容 ： 1. 人員招募邀約面試 2. 公司各項制度建立、推行及維護 3. 協助管理和解決員工關係問題，進行有效客觀的調查 4. 人力資源相關文件之更新與管理 5. 協助薪資系統資料整合、各項表單優化與執行 6. 公司聚餐、員工旅遊、會議... 等活動辦理 7. 其他",
+      "labels": [" 員工20人", "距捷運中山國中站280公尺"],
+      "isActive": true,
+      "isLiked": false
+    },
+    {
+      "id": 7,
+      "title": "F2E前端工程師",
+      "logo": "https://i.postimg.cc/BQYNW1bm/aecom.png",
+      "company": "樂約科技股份有限公司",
+      "companyId": 19,
+      "location": ["台北市", "信義區"],
+      "salary": ["日薪", 2000, 3000],
+      "description": "工作內容 1．負責前端開發。 2．與PM、設計師、後端工程師配合/溝通 3．依照 UI 需求開發架構、熟悉uniapp開發 4．與後端工程師討論/介接 API 5．解決前端遇到的各種技術、性能問題。 6．編寫高質素、美觀、可維護及沿用",
+      "labels": ["員工20人", "遠端工作", "距捷運台北101/世貿站310公尺"],
+      "isActive": true,
+      "isLiked": true
+    },
+    {
+      "id": 8,
+      "title": "前端工程師 2 (Frontend Engineer)",
+      "logo": "https://i.postimg.cc/BQYNW1bm/aecom.png",
+      "company": "美商先進系統資訊有限公司 Advanced Control Systems Inc.",
+      "companyId": 20,
+      "location": ["台中市", "西區"],
+      "salary": null,
+      "description": "(QT WEB等) ‧ 智慧電網應用於電力系統 ‧ 系統整合&工程專案執行 ‧ SCADA系統及其設備維護 ‧ 提供安裝及訓練服務 ‧ 處理相關技術文件",
+      "labels": ["員工120人", "電腦軟體服務業"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 9,
+      "title": " 前端工程師 Frontend Engineer",
+      "logo": "https://i.postimg.cc/XqnxWf9z/adidas.png",
+      "company": "永聯物流開發股份有限公司",
+      "companyId": 21,
+      "location": ["台北市", "內湖區"],
+      "salary": ["年薪", 700000, 1200000],
+      "description": "基於前端技術完成應用開發， 研發團隊規模 8-12 人（持續招聘中）， 需要與其中 4-5 人協力開發與維護產品與項目， 不排斥與海外同事（大陸＼日本＼...）協同工作。 1、精通 HTML＼CSS＼Javascript 前端開發 2",
+      "labels": ["員工35人", "距捷運後山埤站460公尺"],
+      "isActive": false,
+      "isLiked": true
+    },
+    {
+      "id": 10,
+      "title": "Senior Human Resources Specialist 資深人力資源專員",
+      "logo": "https://i.postimg.cc/8CKTM4zh/discord.png",
+      "company": "荷叡森有限公司",
+      "companyId": 22,
+      "location": ["台北市", "信義區"],
+      "salary": null,
+      "description": "人事管理 擬定人力資源政策所有與人力相關的行政事務處理，例如：出勤、勞健保與團保、人事歸檔、薪資發放、勞動法令等以達成企業的短中長期策略目標。 人力資源管理 訂定選、訓、用、留帶領公司往更好的方向成長及人力發展計畫。建構人力資源資訊系",
+      "labels": [" 員工20人", "人資"],
+      "isActive": false,
+      "isLiked": true
+    }
+  ],
+  "nCompanies": [
+    {
+      "id": 13,
+      "image": "https://i.postimg.cc/PrxVdxCT/img-new-company-1.png",
+      "name": "匯雲數位 NexTrek"
+    },
+    {
+      "id": 21,
+      "image": "https://i.postimg.cc/Df5YVsyx/img-new-company-2.png",
+      "name": "Volkswagen UK"
+    },
+    {
+      "id": 17,
+      "image": "https://i.postimg.cc/nrddv8wy/img-new-company-3.png",
+      "name": "IKEA宜家家居股份有限公司"
+    },
+    {
+      "id": 16,
+      "image": "https://i.postimg.cc/0Q0XyKG2/img-new-company-4.png",
+      "name": "誠品生活 Eslite Spectrum"
+    },
+    {
+      "id": 29,
+      "image": "https://i.postimg.cc/PrxVdxCT/img-new-company-1.png",
+      "name": "匯雲數位 NexTrek"
+    }
+  ],
+  "companyDetail": [
+    {
+      "id": 1,
+      "name": "FoodMarco",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "location": ["台北市", "內湖區堤頂大道二段301號9樓之1"],
+      "industry": "軟體開發",
+      "employees": "100-249人",
+      "capital": "6000 萬",
+      "labels": ["軟體開發", "美食經驗交流平台"],
+      "image": "https://i.postimg.cc/zBjxvYf6/company-image-min.png",
+      "env": [
+        "https://i.postimg.cc/KvV47CBQ/img-company-env-1.jpg",
+        "https://i.postimg.cc/XN1v3tH3/img-company-env-10.jpg",
+        "https://i.postimg.cc/C52MNfBd/img-company-env-2.jpg",
+        "https://i.postimg.cc/fLwbTsQW/img-company-env-3.jpg",
+        "https://i.postimg.cc/BnKbmNC3/img-company-env-4.jpg",
+        "https://i.postimg.cc/MGJTNRsQ/img-company-env-5.jpg",
+        "https://i.postimg.cc/L6q8svwP/img-company-env-6.jpg"
+      ],
+      "logo": "https://i.postimg.cc/85MjmTvX/company-logo.png",
+      "aboutUs": "★ 我們是一家從事軟體開發的公司，目前由各領域資深且成果豐碩之成員組成，正為餐廳店家開發新的商業模式。\n★ 公司擁有開放的組織模式，能拉近與上層主管溝通的管道，讓彼此溝通無障礙，利於互相學習成長。\n★ 我們的團隊年輕有活力、充滿熱情、兼具創意與速度、且積極成長拒絕停滯的團隊\n\n● 我們標榜「人人都能成為美食界的馬可波羅」\n● 相信一個好的美食經驗分享平台，可以讓世界更繽紛、更美好。\n● 歡迎志同道合的夥伴們加入我們共同打拼，一起提昇、創造更好的分享服務平台！",
+      "philosophy": "我們深信...\n每個體驗都有價值，美好經驗更值得珍藏。Food Marco致力建立一個「真實、可靠、具效率」的美食經驗交流平台，以人們的經驗分享取代產品搜索，讓好的產品與服務得以迅速被推廣，分享者有機會獲得更好的回饋，進而促進正向的交流循環，創造美好未來。\n\n核心精神…\n分享：打造暢所欲言美食經驗分享平台，讓世界因分享更美好。\n可靠：推崇真實體驗分享，設立意見回饋機制，創造正向循環。\n共好：建置流暢操作，用戶輕鬆交流，共同打造經驗資料庫，共享成果。\n永續：推薦提倡社會責任、地球永續作為者，為環保永續盡心力。\n\n最真實的美食經驗交流平台\nhttps://tw.foodmarco.com/",
+      "benefit": "◆特休加碼：到職即享10日，逐年增加1日，上限30日\n◆週休二日 \n◆提供三節禮金、婚育、喪葬禮金、團體保險(意外保障)\n◆依據法規到職即投保勞保、健保、提撥勞工退休金 \n◆免費供應現煮研磨咖啡\n◆不定期員工聚餐、下午茶\n\n※備註：以上所載之薪資福利事項，悉依聘僱合約書及工作規則辦理，爾後如有調整，依調整後公告為准。",
+      "press": [
+        {
+          "title": "TVBS: 明星、網紅、NBA都搶賣！　2021年數位經濟奇蹟非「它」莫屬",
+          "link": "https://unsplash.com/"
+        },
+        {
+          "title": "Meet創業小聚",
+          "link": "https://unsplash.com/"
+        },
+        {
+          "title": "Digitimes",
+          "link": "https://unsplash.com/"
+        }
+      ],
+      "isLiked": true,
+      "isActive": true,
+      "savedCnt": 30,
+      "socialLinks": {
+        "fb": "https://google.com",
+        "ig": null,
+        "yt": "https://google.com"
+      },
+      "links": [
+        "http://abcdefg.edu.tw23#$utg%024slidj%89-$d4sgaw4$3#565e443!2457",
+        "http://abcdefg.edu.tw23#$utg%024slidj%89-$d4sgaw4$3#565e443!2457"
+      ]
+    }
+  ],
+  "jobList": [
+    {
+      "title": "網頁前端工程師 Web Front-end Engineer",
+      "cid": 1,
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "location": ["台中市", "南區忠明南路"],
+      "salary": ["月薪", 28000, 33000],
+      "description": "【我們想找共船的人】\n1. 我們想找的不只是把東西做出來的手腳，而是一起前行的、突破而創新的腦袋滿，有新創團隊工作經驗佳，勇敢追求更佳的解決方案，4. 主動積極且樂於分享，擅長跨部門溝通及協調\n5. 深具邏輯與分析能力，同時能夠獨立解決問題",
+      "content": "協助業務銷售",
+      "labels": ["數位行銷", "1年以上"],
+      "isActive": false,
+      "isLiked": false,
+      "id": 1
+    },
+    {
+      "title": "行動小編2",
+      "cid": 1,
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "location": ["台中市", "南區忠明南路"],
+      "salary": ["月薪", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "content": "協助業務銷售",
+      "labels": ["數位行銷", "專案企劃", "業務", "專案管理", "行政事務"],
+      "isActive": true,
+      "isLiked": true,
+      "id": 2
+    },
+    {
+      "title": "行動小編3",
+      "cid": 2,
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "location": ["台中市", "南區忠明南路"],
+      "salary": ["月薪", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "content": "協助業務銷售",
+      "labels": ["設計", "UI/UX"],
+      "isActive": true,
+      "isLiked": false,
+      "id": 3
+    },
+    {
+      "title": "UI/UX設計師1",
+      "cid": 1,
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "location": ["台中市", "南區忠明南路"],
+      "salary": ["月薪", 28000, 33000],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "content": "協助業務銷售",
+      "labels": [],
+      "isActive": true,
+      "isLiked": true,
+      "id": 4
+    },
+    {
+      "title": "UI/UX設計師2",
+      "cid": 1,
+      "company": "樂學舍數位教育有限公司",
+      "image": "",
+      "location": ["台中市", "南區忠明南路"],
+      "salary": null,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "content": "協助業務銷售",
+      "labels": [],
+      "isActive": false,
+      "isLiked": false,
+      "id": 5
+    }
+  ],
+  "eventCalendar": [
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 2,
+      "type": "A",
+      "id": 1
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 2,
+      "type": "B",
+      "id": 2
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 2,
+      "type": "B",
+      "id": 3
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 2,
+      "type": "C",
+      "id": 4
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 6,
+      "type": "A",
+      "id": 5
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 7,
+      "type": "A",
+      "id": 6
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 7,
+      "type": "C",
+      "id": 7
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "date": 12,
+      "type": "C",
+      "id": 8
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "date": 30,
+      "type": "A",
+      "id": 9
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "date": 2,
+      "type": "A",
+      "id": 10
+    }
+  ]
+}

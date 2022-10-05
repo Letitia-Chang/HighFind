@@ -1,0 +1,648 @@
+@import "../scss/global.scss";
+
+.events {
+  // 最新活動
+  .latest-events {
+    background-color: #fcfaee;
+    padding: 0px 360px;
+
+    .event-banners {
+      background-color: #cccccc;
+      @include size(790px, 440px);
+    }
+
+    .events-items {
+      padding-top: 32px;
+
+      .title {
+        @include text(#4b4b4b, 20px, 400);
+        margin-bottom: 10px;
+      }
+
+      .event-item {
+        background-color: white;
+        border-radius: 100px;
+        border: 1px solid #f6f6f6;
+        padding: 8px 16px;
+        width: 386px;
+        margin-top: 8px;
+        align-items: center;
+        justify-content: space-between;
+
+        .event-item-logo {
+          @include size(28px, 28px);
+          @extend %background-image;
+          border-radius: 50%;
+          border: 5px solid white;
+          outline: 1px solid #cccccc;
+        }
+
+        p {
+          @include text(#2d2d2d, 14px, 400);
+          @extend %ellipsis;
+          margin-left: 10px;
+          width: 255px;
+        }
+
+        img {
+          @include size(24px, 24px);
+        }
+      }
+
+      .event-indicators {
+        width: 52px;
+
+        button {
+          @include size(12px, 12px);
+          border-radius: 50%;
+          border: none;
+
+          &.active {
+            background-color: white;
+          }
+
+          &.inactive {
+            background-color: #f2f2f2;
+          }
+        }
+      }
+    }
+  }
+
+  // 篩選活動
+  .search-events {
+    background-color: #fdfdf5;
+    padding: 24px 360px 34px 360px;
+
+    // Right
+    .right-filter {
+      // Switch
+      .switch {
+        .switch-1,
+        .switch-2,
+        .switch-3 {
+          border: none;
+          padding: 18px 0px;
+          cursor: pointer;
+
+          img {
+            @include size(24px, 24px);
+          }
+
+          span {
+            @include text(white, 20px, 700);
+            margin-left: 10px;
+          }
+
+          &.active {
+            background-color: #f07878;
+          }
+          &.inactive {
+            background-color: #cccccc;
+          }
+        }
+
+        .switch-1 {
+          border-radius: 15px 0px 0px 15px;
+        }
+
+        .switch-2 {
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+        }
+
+        .switch-3 {
+          border-radius: 0px 15px 15px 0px;
+        }
+      }
+
+      // Keyword
+      .keyword {
+        margin-top: 12px;
+        position: relative;
+
+        .search-icon {
+          @include size(24px, 24px);
+          position: absolute;
+          top: 12px;
+          left: 12px;
+        }
+
+        input {
+          border-radius: 10px;
+          border: 1px solid #cccccc;
+          @include size(693px, 48px);
+          padding: 11px 46px;
+        }
+
+        input::placeholder {
+          @include text(#909090, 16px, 400);
+        }
+
+        input:focus {
+          outline: none;
+        }
+
+        .popular-btn {
+          font-size: 14px;
+          font-weight: 700;
+          height: 30px;
+          background-color: transparent;
+          border: none;
+          padding: 4px 10px;
+          margin-right: 10px;
+          align-items: center;
+        }
+      }
+
+      // Sort
+      .sort {
+        position: relative;
+
+        .sort-btn {
+          @include text(#4b4b4b, 14px, 700);
+          @include size(94px, 30px);
+          background-color: transparent;
+          border: none;
+          padding: 4px 10px;
+          align-items: center;
+
+          img {
+            @include size(18px, 18px);
+          }
+
+          //   &.type-1 {
+          //     img {
+          //       @include size(18px, 18px);
+          //     }
+          //   }
+
+          //   &.type-2 {
+          //     img {
+          //       @include size(16px, 16px);
+          //       margin: 0px 4px;
+          //     }
+          //   }
+
+          .arrow-icon {
+            @include size(16px, 16px);
+            margin: 0px 4px;
+          }
+        }
+
+        .sort-dropdown {
+          background-color: white;
+          border-radius: 5px;
+          width: 110px;
+          border: 1px solid #f07878;
+          padding: 12px;
+          position: absolute;
+          top: 30px;
+          left: -30px;
+
+          .sort-option {
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img {
+              @include size(16px, 16px);
+              margin: 0px 4px;
+            }
+
+            &.inactive {
+              span {
+                @include text(#2d2d2d, 14px, 400);
+              }
+            }
+
+            &.active {
+              background-color: #fff6f5;
+
+              span {
+                @include text(#2d2d2d, 14px, 400);
+              }
+            }
+          }
+
+          .sort-option:last-of-type {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      // Result
+      .search-event-results {
+        .search-result {
+          height: 121px;
+          background-color: white;
+          @include shadow(2px, 2px, 2px, 0px, rgba(0, 0, 0, 0.15));
+          padding: 11px 20px;
+          border-radius: 10px;
+          margin-top: 12px;
+
+          .host-logo {
+            @include size(64px, 64px);
+            margin-left: 20px;
+          }
+
+          .event-info {
+            margin-left: 20px;
+
+            .event-title {
+              @include text(#2d2d2d, 18px, 400);
+              margin-bottom: 6px;
+            }
+
+            .host-name {
+              @include text(#909090, 14px, 400);
+              margin-bottom: 0px;
+            }
+          }
+
+          .more-info {
+            img {
+              @include size(20px, 20px);
+            }
+
+            span {
+              margin-left: 8px;
+              @include text(#6f6f6f, 14px, 400);
+            }
+          }
+        }
+
+        .see-more-event-btn {
+          cursor: pointer;
+          margin-top: 12px;
+
+          span {
+            @include text(black, 14px, 400);
+          }
+
+          img {
+            @include size(18px, 18px);
+            margin-left: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  // 活動行事曆
+  .calendar {
+    background-color: #fdfdf5;
+    padding: 64px 360px;
+
+    .calendar-title {
+      background-color: #f07878;
+      border-radius: 15px;
+      padding: 18px 0px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+
+      img {
+        @include size(28px, 28px);
+      }
+
+      span {
+        @include text(white, 20px, 700);
+        margin-left: 10px;
+      }
+    }
+
+    // Left
+    .left-column {
+      .calendar-switch {
+        height: 57px;
+
+        .switch-event-month {
+          .year-month {
+            margin: 0px 24px -4px 24px;
+
+            span:first-of-type {
+              @include text(#909090, 18px, 700);
+              margin-bottom: -4px;
+            }
+
+            span:last-of-type {
+              @include text(#ec5656, 24px, 700);
+            }
+          }
+
+          img {
+            @include size(24px, 24px);
+          }
+        }
+
+        .switch-event-type {
+          button {
+            align-items: center;
+
+            &.active {
+              img {
+                @include size(16px, 16px);
+                margin-right: 2px;
+              }
+              background-color: #fff6f5;
+              border: none;
+              padding: 2px 5px;
+              @include text(#f07878, 14px, 400);
+              margin-left: 12.5px;
+            }
+
+            &.inactive {
+              background-color: transparent;
+              border: none;
+              padding: 2px 5px;
+              @include text(#6f6f6f, 14px, 400);
+              margin-left: 12.5px;
+            }
+          }
+        }
+      }
+
+      .calendar-weekday {
+        margin-top: 20px;
+
+        .weekday {
+          &.weekday-light {
+            background-color: white;
+            border: 1px solid #ecedec;
+            @include size(calc((100% - 60px) / 7), 54px);
+
+            span:first-of-type {
+              @include text(#4b4b4b, 16px, 400);
+            }
+
+            span:last-of-type {
+              @include text(#4b4b4b, 14px, 400);
+            }
+          }
+
+          &.weekday-dark {
+            background-color: #f07878;
+            width: calc((100% - 60px) / 7);
+            height: 54px;
+
+            span:first-of-type {
+              @include text(white, 16px, 400);
+            }
+
+            span:last-of-type {
+              @include text(white, 14px, 400);
+            }
+          }
+        }
+
+        .weekday:not(:last-of-type) {
+          margin-right: 10px;
+        }
+      }
+
+      // .calendar-block {
+      .calendar-items {
+        .calendar-item {
+          border-radius: 10px;
+          overflow: hidden;
+          @include size(calc((100% - 60px) / 7), 160px);
+          margin-top: 16px;
+          position: relative;
+
+          img {
+            @include size(20px, 20px);
+            position: absolute;
+            border-radius: 50%;
+            right: 6px;
+            bottom: 6px;
+            //   cursor: pointer;
+          }
+
+          &.selected {
+            border: 1px solid #ec5656 !important;
+
+            .top {
+              height: 32px;
+              padding: 6px 14px;
+              justify-content: flex-end;
+              border-bottom: 1px solid #ec5656 !important;
+              background-color: #fff9d5;
+
+              span {
+                @include text(#ec5656, 14px, 700);
+              }
+            }
+
+            .bottom {
+              padding: 12px 9px;
+              background-color: #fff9d5;
+
+              .label {
+                border-radius: 100px;
+                align-items: center;
+                justify-content: center;
+                @include size(100%, 21px);
+
+                &.type-A {
+                  background-color: #f2f2f2;
+                  @include text(black, 12px, 400);
+                }
+
+                &.type-B {
+                  background-color: #cccccc;
+                  @include text(black, 12px, 400);
+                }
+
+                &.type-C {
+                  background-color: #6f6f6f;
+                  @include text(white, 12px, 400);
+                }
+              }
+
+              .label:not(:last-of-type) {
+                margin-bottom: 6px;
+              }
+            }
+          }
+
+          &.active {
+            border: 1px solid #cccccc;
+
+            .top {
+              height: 32px;
+              padding: 6px 14px;
+              justify-content: flex-end;
+              border-bottom: 1px solid #cccccc;
+
+              span {
+                @include text(#4b4b4b, 14px, 700);
+              }
+            }
+
+            .bottom {
+              padding: 12px 9px;
+
+              .label {
+                border-radius: 100px;
+                align-items: center;
+                justify-content: center;
+                @include size(100%, 21px);
+
+                &.type-A {
+                  background-color: #f2f2f2;
+                  @include text(black, 12px, 400);
+                }
+
+                &.type-B {
+                  background-color: #cccccc;
+                  @include text(black, 12px, 400);
+                }
+
+                &.type-C {
+                  background-color: #6f6f6f;
+                  @include text(white, 12px, 400);
+                }
+              }
+
+              .label:not(:last-of-type) {
+                margin-bottom: 6px;
+              }
+            }
+          }
+
+          &.inactive {
+            background-color: #cccccc;
+            border: 1px solid white;
+
+            .top {
+              height: 32px;
+              padding: 6px 14px;
+              justify-content: flex-end;
+              border-bottom: 1px solid white;
+
+              span {
+                @include text(white, 14px, 700);
+              }
+            }
+          }
+
+          &.today {
+            .top {
+              padding: 4px 8px;
+
+              span {
+                @include text(#ec5656, 14px, 700);
+                text-align: center;
+                @include size(25px, 24px);
+                border-radius: 50%;
+                border: 1px solid #ec5656;
+              }
+            }
+          }
+        }
+
+        .calendar-item:not(:nth-of-type(7n + 7)) {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    // Right
+    .right-column {
+      .daily-event-info {
+        margin-top: 77px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        border: 1px solid #f9cccc;
+        overflow-y: hidden;
+
+        .date {
+          background-color: #f9cccc;
+          padding: 12px 10px;
+          align-items: center;
+          justify-content: center;
+          @include text(#4b4b4b, 16px, 400);
+        }
+
+        .event-infos {
+          padding: 0px 10px 10px 10px;
+          height: 698px;
+          overflow-y: scroll;
+
+          .event-info {
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid $gray-400;
+            margin-top: 16px;
+
+            .tag {
+              background-color: #f2f2f2;
+              border-radius: 100px;
+              padding: 2px 18px;
+              @include text(black, 14px, 400);
+            }
+
+            .status {
+              &.active {
+                @include text($primary-color-90, 12px, 700);
+              }
+
+              &.inactive {
+                @include text($gray-700, 12px, 700);
+              }
+            }
+
+            .title {
+              @include multiline-ellipsis(2);
+              @include text(black, 14px, 400);
+              margin-top: 4px;
+            }
+
+            .others {
+              background-color: #fff6f5;
+              border-radius: 5px;
+              padding: 4px;
+
+              div {
+                margin-bottom: 0px;
+
+                img {
+                  @include size(16px, 16px);
+                }
+
+                span {
+                  @include text(#6f6f6f, 12px, 400);
+                  margin-left: 4px;
+                }
+              }
+            }
+          }
+        }
+
+        .no-event {
+          padding: 0px 10px 00px 10px;
+          height: 698px;
+
+          .event-infos {
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid $gray-400;
+            margin-top: 16px;
+            height: 100%;
+
+            p {
+              @include text(#f07878, 14px, 400);
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .tips {
+        @include text(#6f6f6f, 12px, 700);
+        margin-top: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../global.scss";
+
+.job-container {
+  width: 1200px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+
+  .job-items {
+    align-items: center;
+    position: relative;
+    background-color: #b5e6e4;
+    border-radius: 8px;
+    padding: 15px;
+
+    .job-item {
+      justify-content: space-between;
+      position: relative;
+      background-color: white;
+      border-radius: 8px;
+      @include size(380px, 220px);
+      padding: 16px;
+      @include shadow(1px, 2px, 2px, 0px, rgba(0, 0, 0, 0.15));
+
+      .company-logo {
+        @extend %background-image;
+        @include size(56px, 56px);
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+
+      .job-title {
+        @include text($gray-900, 18px, 400);
+        @extend %ellipsis;
+        margin-bottom: 6px;
+        width: 175px;
+        text-decoration: none;
+      }
+
+      .company-name {
+        @include text($primary-color-90, 14px, 700);
+        @extend %ellipsis;
+        width: 175px;
+        text-decoration: none;
+      }
+
+      .active-recruit {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background-color: $primary-color-90;
+        border-radius: 100px;
+        @include text(white, 16px, 400);
+        height: 32px;
+        padding: 0px 6px 0px 0px;
+      }
+
+      .job-location,
+      .job-salary,
+      .job-description {
+        @include text($gray-700, 14px, 400);
+        margin-bottom: 2px;
+
+        img {
+          @include size(18px, 18px);
+          margin-right: 8px;
+        }
+
+        p {
+          @include text($gray-700, 14px, 400);
+          width: calc(100% - 60px);
+          @extend %ellipsis;
+        }
+      }
+
+      .job-labels {
+        @include text($primary-color-90, 14px, 700);
+
+        img {
+          @include size(18px, 18px);
+          margin-right: 8px;
+        }
+
+        p {
+          width: calc(100% - 60px);
+          @extend %ellipsis;
+
+          span {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .job-item:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+}
