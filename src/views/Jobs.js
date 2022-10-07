@@ -3,9 +3,9 @@
 // option button width 
 // reset labels on hover 
 
-import useFetch from "../hooks/useFetch";
-import { Link, useResolvedPath } from 'react-router-dom';
-import { useParams } from "react-router-dom";
+// import useFetch from "../hooks/useFetch";
+// import { Link, useResolvedPath } from 'react-router-dom';
+// import { useParams } from "react-router-dom";
 import { useRef, useState, useEffect } from 'react';
 import { setFakeData, setSalary } from "../utils/index";
 
@@ -96,21 +96,24 @@ const Jobs = () => {
                 temReqObject.label.push(data);
                 setReqParams(temReqObject);
                 break;
+            default:
+                console.log('Into default');
+                break;
+
         }
     }
 
     // Send Request
-    const handleSendReq = () => {
-        console.log('send new request')
-        console.log(reqParams)
-    }
+    // const handleSendReq = () => {
+    //     console.log('send new request')
+    //     console.log(reqParams)
+    // }
 
 
     // Fetch Data
     // const { data: jobs, isPending: jobIsPending, error: jobError } = useFetch('http://localhost:8000/filteredJobs');
     const [jobs, setData] = useState(null);
     const [jobIsPending, setIsPending] = useState(true)
-    const [error, setError] = useState(null)
 
     useEffect(() => {
         const abortCont = new AbortController();
@@ -127,7 +130,6 @@ const Jobs = () => {
                 // setJobs(data, reqParams);
                 // filterData(data);
                 setIsPending(false);
-                setError(null);
             })
             .catch(err => {
                 if (err.name === 'AbortError') {
@@ -135,7 +137,6 @@ const Jobs = () => {
                 } else {
                     console.log(err);
                     setIsPending(false);
-                    setError(err.message);
                 }
             })
 
@@ -530,6 +531,11 @@ const Jobs = () => {
     const [jobLocation, setJobLocation] = useState("");
     const [jobSalary, setJobSalary] = useState({ custom: true, type: '月薪', start: "", end: "" });
     const [jobLabels, setJobLabels] = useState("");
+    console.log(jobType);
+    console.log(jobLocation);
+    console.log(jobLabels);
+
+
     // JobSalary
     const inputStart = useRef(null);  // 自訂薪資範圍
     const inputEnd = useRef(null);    // 自訂薪資範圍
@@ -557,10 +563,11 @@ const Jobs = () => {
     // 加入 Filter Label Array
     const handleAddLabels = (id, name) => {
         // console.log(`label added: id - ${id} & name - ${name}`)
+        var filteredArray = [];
         if (id === 'Salary') {
-            var filteredArray = labelsArray.filter(e => e.name === name);
+            filteredArray = labelsArray.filter(e => e.name === name);
         } else {
-            var filteredArray = labelsArray.filter(e => e.id === id);
+            filteredArray = labelsArray.filter(e => e.id === id);
         }
 
         console.log(filteredArray)
@@ -573,10 +580,12 @@ const Jobs = () => {
     }
     // 移除 Filter Label Array
     const handleRemoveLabels = (id, name) => {
+        var filteredArray = [];
+
         if (id === 'Salary') {
-            var filteredArray = labelsArray.filter(e => e.name !== name);
+            filteredArray = labelsArray.filter(e => e.name !== name);
         } else {
-            var filteredArray = labelsArray.filter(e => e.id !== id);
+            filteredArray = labelsArray.filter(e => e.id !== id);
         }
         setLabelsArray(filteredArray);
     }

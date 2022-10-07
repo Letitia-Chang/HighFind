@@ -21,7 +21,7 @@ const Event = () => {
             <div className="test-bg" style={{ paddingTop: '364px', background: 'url("https://i.postimg.cc/jS3qJVck/NTU.png"), #F6F6F6', backgroundRepeat: 'no-repeat, no-repeat', backgroundPosition: 'top center, top center', backgroundSize: '100% 534px, cover' }}>
                 <div className="d-flex flex-column align-items-center justify-content-center" style={{ padding: "0px 360px" }}>
                     {/* 上方資訊 */}
-                    <div className="d-flex flex-row justify-content-between" style={{ position: 'relative', backgroundColor: 'white', borderRadius: '15px 15px 0px 0px', boxShadow: '0px -3px 5px 0px rgba(0, 0, 0, 0.15)', height: '313px', width: '1200px', borderBottom: '5px solid #EC5656', position: 'relative', padding: '92px 48px 28px 96px' }}>
+                    <div className="d-flex flex-row justify-content-between" style={{ position: 'relative', backgroundColor: 'white', borderRadius: '15px 15px 0px 0px', boxShadow: '0px -3px 5px 0px rgba(0, 0, 0, 0.15)', height: '313px', width: '1200px', borderBottom: '5px solid #EC5656', padding: '92px 48px 28px 96px' }}>
                         <div className="d-flex-flex-column" style={{ position: "absolute", zIndex: '2', top: '-68px', left: '25%' }}>
                             {/* 學校名稱 */}
                             <div className="d-flex flex-column align-items-center justify-content-center" style={{ backgroundColor: '#EC5656', width: '592px', height: '136px' }}>

@@ -1,6 +1,6 @@
 // deal with all buttons 
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { setFakeData } from "../utils/index";
 
 import "../assets/scss/company.scss";
@@ -50,7 +50,6 @@ const Company = () => {
     // 取得該公司資料
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true);
-    const [error, setError] = useState(null);
 
     const [googleMapLink, setGoogleMapLink] = useState(null);
     const OpenGoogleMap = () => {
@@ -91,7 +90,6 @@ const Company = () => {
                 //     })
 
                 setIsPending(false);
-                setError(null);
             })
             .catch(err => {
                 if (err.name === 'AbortError') {
@@ -99,12 +97,11 @@ const Company = () => {
                 } else {
                     console.log(err);
                     setIsPending(false);
-                    setError(err.message);
                 }
             })
 
         return () => abortCont.abort();
-    }, [])
+    }, [id])
 
     // 立即應徵
     const [btnIsHovered, setHoverStatus] = useState(false)

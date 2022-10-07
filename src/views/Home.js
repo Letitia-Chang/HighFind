@@ -23,13 +23,13 @@ import Indicators from "../components/Home/Indicators"
 import SeeMoreButton from "../components/button/SeeMoreButton";
 
 const Home = () => {
-    const { data: tags, isPending: tagIsPending, error: tagError } = useFetch('http://localhost:8000/tags');
-    const { data: pJobs, isPending: pJobIsPending, error: pJobError, updateData: setPJobData, setIsPending: setPJobIsPending } = useFetchUpdate('http://localhost:8000/pJobs');
-    const { data: nJobs, isPending: nJobIsPending, error: nJobError, updateData: setNJobData, setIsPending: setNJobIsPending } = useFetchUpdate('http://localhost:8000/nJobs');
-    const { data: pCompanys, isPending: pCompanyIsPending, error: pCompanyError, updateData: setPCompanyData, setIsPending: setPCompanyIsPending } = useFetchUpdate('http://localhost:8000/company');
-    const { data: nCompanys, isPending: nCompanyIsPending, error: nCompanyError, updateData: setNCompanyData, setIsPending: setNCompanyIsPending } = useFetchUpdate('http://localhost:8000/company');
-    const { data: aboutUs, isPending: aboutUsIsPending, error: aboutUsError } = useFetch(`http://localhost:8000/aboutUs`);
-    const { data: events, isPending: eventIsPending, error: eventError } = useFetch(`http://localhost:8000/events`);
+    const { data: tags, isPending: tagIsPending, } = useFetch('http://localhost:8000/tags');
+    const { data: pJobs, isPending: pJobIsPending, updateData: setPJobData, setIsPending: setPJobIsPending } = useFetchUpdate('http://localhost:8000/pJobs');
+    const { data: nJobs, isPending: nJobIsPending, updateData: setNJobData, setIsPending: setNJobIsPending } = useFetchUpdate('http://localhost:8000/nJobs');
+    const { data: pCompanys, isPending: pCompanyIsPending, updateData: setPCompanyData, setIsPending: setPCompanyIsPending } = useFetchUpdate('http://localhost:8000/company');
+    const { data: nCompanys, isPending: nCompanyIsPending, updateData: setNCompanyData, setIsPending: setNCompanyIsPending } = useFetchUpdate('http://localhost:8000/company');
+    const { data: aboutUs, isPending: aboutUsIsPending, } = useFetch(`http://localhost:8000/aboutUs`);
+    const { data: events, isPending: eventIsPending, } = useFetch(`http://localhost:8000/events`);
 
     const navigate = useNavigate();
 
@@ -60,7 +60,7 @@ const Home = () => {
         const eventItemWidth = 810;
         const windowWidth = window.innerWidth;
         eventContainer.current.scrollLeft = eventItemWidth * (activeEvent - 1) + (eventItemWidth - 0.5 * (windowWidth - eventItemWidth));
-    }, [eventIsPending])
+    }, [eventIsPending, activeEvent])
 
     // 熱門職缺
     const pJobsOptions = ["人資 / 營運", "社群經營", "前端工程師", "後端工程師", "UIUX / 視覺設計", "行銷企劃", "業務開發", "全端工程師", "行動裝置開發"];

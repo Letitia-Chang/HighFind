@@ -24,7 +24,6 @@ import CalendarXS from "../components/calendar/CalendarXS";
 import RecommendedCompanies from "../components/RecommendedCompanies";
 
 import { useEffect, useState } from 'react';
-// import useFetchUpdate from "../hooks/useFetchUpdate";
 import useFetch from "../hooks/useFetch";
 import { setFakeData } from "../utils";
 
@@ -129,6 +128,7 @@ const Events = () => {
     }
     // 右方：關鍵字搜尋
     const [keyWordSearch, setKeywordSearch] = useState('');
+    console.log(keyWordSearch);
 
     // 最熱門
     const [sortPopular, setSortPopular] = useState(true);
@@ -167,9 +167,9 @@ const Events = () => {
 
     // 取得顯示日期資訊
     const [data, setData] = useState(null);
+    console.log(data);
     const [isPending, setIsPending] = useState(true)
-    const [error, setError] = useState(null)
-    const updateData = (params) => setData(params);
+    // const updateData = (params) => setData(params);
 
     // 計算顯示日期列表
     useEffect(() => {
@@ -243,7 +243,6 @@ const Events = () => {
                     }
                 });
                 setIsPending(false);
-                setError(null)
             })
             .catch(err => {
                 if (err.name === 'AbortError') {
@@ -251,7 +250,6 @@ const Events = () => {
                 } else {
                     console.log(err);
                     setIsPending(false);
-                    setError(err.message);
                 }
             })
 

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const useFetchUpdate = (url) => {
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true)
-    const [error, setError] = useState(null)
+    // const [error, setError] = useState(null)
     const updateData = (params) => setData(params);
 
     useEffect(() => {
@@ -20,7 +20,7 @@ const useFetchUpdate = (url) => {
             .then(data => {
                 setData(data);
                 setIsPending(false);
-                setError(null)
+                // setError(null)
             })
             .catch(err => {
                 if (err.name === 'AbortError') {
@@ -28,14 +28,15 @@ const useFetchUpdate = (url) => {
                 } else {
                     console.log(err);
                     setIsPending(false);
-                    setError(err.message);
+                    // setError(err.message);
                 }
             })
 
         return () => abortCont.abort();
-    }, [isPending])
+    }, [url, isPending])
 
-    return { data, isPending, error, updateData, setIsPending };
+    // return { data, isPending, error, updateData, setIsPending };
+    return { data, isPending, updateData, setIsPending };
 }
 
 export default useFetchUpdate;
